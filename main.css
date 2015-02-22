@@ -1,12 +1,11 @@
 body {
     background: green;
-    font-family: georgia;
-    color: black
-;
+    font-family: georgia, "Trebuchet MS", Verdana, sans-serif;
+    color: black;
 }
 
 h1 {
-    background: #FF0099;
+    background: #F90;
 }
 
 h2 {
@@ -34,12 +33,12 @@ a {
 p.special {
     color: orange;
     background: yellow;
-    font-family: helvetica;
-    padding: 10px; 100px;
+    font-family: helvetica, arial, sans-serif;
+    padding: 10px;
 }
 
 h1.header {
-    color: #888;
+    color: #FFF;
 }
 
 

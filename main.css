@@ -1,0 +1,75 @@
+body {
+    background: green;
+    font-family: georgia;
+    color: black
+;
+}
+
+h1 {
+    background: #FF0099;
+}
+
+h2 {
+    background: yellow;
+    padding: 50px;
+}
+
+p {
+    background: #FF3333;
+}
+
+
+ul {
+    background: #CC33FF;
+}
+
+a:hover {
+    color: purple;
+}
+
+a {
+    color: blue;
+}
+
+p.special {
+    color: orange;
+    background: yellow;
+    font-family: helvetica;
+    padding: 10px; 100px;
+}
+
+h1.header {
+    color: #888;
+}
+
+
+#top {
+        margin: 20px;
+        padding: 10px;
+        background: red;
+        height: 100px
+}
+
+
+#left {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 450px;
+        background: red;
+}
+
+#right {
+        position: absolute;
+        top: 100px;
+        right:100px;
+        width: 450px;
+        background: blue;
+}
+
+#center {
+        margin-top: 0;
+        margin-left: 220px;
+        margin-right: 220px;
+        background: red;
+}

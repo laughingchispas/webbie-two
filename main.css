@@ -1,33 +1,47 @@
 body {
-    background: green;
+    background-image: url("http://orgs.usd.edu/nmm/Violins/Amati3423/3423HAmatiViolinSoundholesBlackLG.jpg");
     font-family: georgia, "Trebuchet MS", Verdana, sans-serif;
     color: black;
 }
 
+/main title/
+h1.header {
+    color: red;
+    font-size: 200%;
+}
+
+h2.subtitle {
+    color: pink
+}
+
+
 h1 {
-    background: #F90;
+    color: red;
 }
 
 h2 {
-    background: yellow;
+    color: white;
     padding: 50px;
 }
 
+/I want to break this too/
 p {
-    background: #FF3333;
+    background: #FF3333
 }
 
 
+
+/I want to break this/
 ul {
-    background: #CC33FF;
+    background: black
 }
 
 a:hover {
-    color: purple;
+    color: black;
 }
 
 a {
-    color: blue;
+    color: white;
 }
 
 p.special {
@@ -37,9 +51,6 @@ p.special {
     padding: 10px;
 }
 
-h1.header {
-    color: #FFF;
-}
 
 
 #top {
@@ -80,6 +91,81 @@ h1.header {
 
 .gallery img{
 	display:block;
-	margin:30px auto 0 auto;
+	margin:50px auto 0 auto;
 	width:400px;
+}
+
+
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:block;
+	float: left;
+	margin-right: 1px;
+}
+
+
+/*Style for menu links*/
+li a {
+	display: inline-block;
+	min-width: 100px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: red;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #333;
+	color: red;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	color: red;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #333;
+	color: red;
+}
+
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
 }

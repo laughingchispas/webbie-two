@@ -1,0 +1,230 @@
+
+/*
+body {
+    background-image: url("ren.woman.jpg");
+    background-size: 100%;
+    background-position: left top;
+    font-family: "Courier New", Arial, Geneva,sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
+
+    @font-face {
+    	font-family: 'AnudiRegular';
+    	src: url('fonts/Anudi.eot');
+    	src: local('Anudi Regular'), local('Riesling'),url('fonts/Anudi.ttf') format('truetype');
+    }
+
+
+
+#wrapper {
+       background: transparent;
+       width: 2100px;
+       height: 200px;
+       margin: auto;
+}
+
+#name {
+        width: 700px;
+        float: left;
+        padding: 25px 0px 0px 50px;
+        font-size: 40px;
+        font-family: 'AnudiRegular', Arial, sans-serif;
+        color: transparent;
+}
+
+#name:hover{
+    color: rgb(255, 112, 77);
+}
+
+.menuLogo {
+        float: right;
+}
+
+.menu {
+    float: right;
+}
+
+.logo {
+    width: 2000px;
+}
+
+
+.logo img {
+    width: 300px;
+    float: left;
+    padding: 20px;
+}
+
+#arrow {
+    width: 100px;
+    background: purple;
+    margin: auto;
+    padding: 0px 1000px 0px 1000px;
+
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    float: right;
+    width: 1500px;
+}
+ul a {
+    color: black;
+    /*background:rgba(500,255,255,0.5); */
+
+}
+li {
+    float: right;
+    font-size: 30px;
+    style: none;
+    font: times;
+    border: 1px solid black;
+    font-weight: bold;
+}
+li a {
+        display: block;
+        width: 200px;
+        height: 70px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+}
+a:link{
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+*/
+/* selected link */
+
+a:active {
+    color: purple;
+}
+#clear {
+    clear: both;
+}
+
+
+/*middle section content*/
+*/
+
+#left {
+        float: left;
+        width: 400px;
+        background: red;
+        font-size: 15px;
+}
+
+
+#center {
+        margin: 0px auto;
+        width: 2000px;
+        background:rgba(500,255,255,0.5);
+        border: 5px solid black;
+        font-size: 20px;
+        height: 850px;
+
+}
+#right {
+        float: right;
+        right: 50px;
+        width: 400px;
+        background: blue;
+        font-size: 15px;
+        height: 1000px;
+}
+
+
+
+#email{
+    color: purple;
+    font-size: 30px;
+    float: right;
+    height: 100px;
+    background-color: green;
+    padding: 50px;
+}
+
+
+
+.image1 img{
+    border: 5px solid black;
+    position: relative;
+    left: 100px;
+    top: 230px;
+}
+
+.image2 img{
+    border: 5px solid black;
+    position: relative;
+    top:0px;
+    left: 795px;
+    top: -195px;
+}
+
+.image3 img{
+    position: relative;
+    top: -609px;
+    left: 1492px;
+    padding: 0px;
+    border: 5px solid black;
+}
+
+img.imageLeft {
+    float:left;
+    left: 0%;
+    bottom: 0px;
+    position: relative;
+    width: 150px;
+}
+img.imageMiddle {
+
+    float: left;
+    position: relative;
+    width: 150px;
+}
+img.imageRight{
+    float: right;
+    position: relative;
+    width: 150px;
+}
+
+body, html, main {
+	/* important */
+	height: 100%;
+}
+
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("web4.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("web4.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("web4.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("ren.womanull.jpg");
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+
+
+

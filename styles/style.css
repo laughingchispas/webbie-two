@@ -138,24 +138,15 @@ table {
 	border-spacing: 0;
 }
 
-/* ******************************************
-	Web Fonts
-****************************************** */
 
 @font-face {
-    font-family: 'Open Sans Regular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+    	font-family: 'AnudiRegular';
+    	src: url('fonts/Anudi.eot');
+    	src: local('Anudi Regular'), local('Anudi'),url('fonts/Anudi.ttf') format('truetype');
+    }
 
 body {
-	font-family: "Open Sans Regular", "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'AnudiRegular', Arial, sans-serif;
 }
 
 

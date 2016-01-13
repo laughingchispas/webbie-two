@@ -1,230 +1,322 @@
 
-/*
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: #b4d7a8;
+  text-decoration: none;
+}
+
+
+@font-face {
+    	font-family: 'AnudiRegular';
+    	src: url('fonts/Anudi.eot');
+    	src: local('Anudi Regular'), local('Anudi'),url('fonts/Anudi.ttf') format('truetype');
+}
+
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+
 body {
-    background-image: url("ren.woman.jpg");
-    background-size: 100%;
-    background-position: left top;
-    font-family: "Courier New", Arial, Geneva,sans-serif;
+    font-family: "AnudiRegular", Arial, Geneva,sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-*/
 
-    @font-face {
-    	font-family: 'AnudiRegular';
-    	src: url('fonts/Anudi.eot');
-    	src: local('Anudi Regular'), local('Riesling'),url('fonts/Anudi.ttf') format('truetype');
-    }
-
-
-
-#wrapper {
-       background: transparent;
-       width: 2100px;
-       height: 200px;
-       margin: auto;
-}
-
-#name {
-        width: 700px;
+.name {
+        width: 500px;
         float: left;
-        padding: 25px 0px 0px 50px;
-        font-size: 40px;
+        padding: 0px 0px 0px 50px;
+        font-size: 30px;
         font-family: 'AnudiRegular', Arial, sans-serif;
         color: transparent;
 }
 
-#name:hover{
-    color: rgb(255, 112, 77);
+.name:hover{
+    color: rgb(255, 153, 51);
 }
 
-.menuLogo {
-        float: right;
-}
-
-.menu {
-    float: right;
-}
-
-.logo {
-    width: 2000px;
+h1, h2, h3 {
+    text-align: center;
 }
 
 
-.logo img {
-    width: 300px;
-    float: left;
-    padding: 20px;
+
+ h2 {
+        font-size: 60px;
+        }
+h1 {
+    font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+        }
+
+
+/* --------------------------------
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
 }
 
-#arrow {
-    width: 100px;
-    background: purple;
-    margin: auto;
-    padding: 0px 1000px 0px 1000px;
+/* --------------------------------
 
+Main components
 
-
-
-
-ul {
-    list-style-type: none;
-    padding: 0px 50px 0px 0px;
-    float: right;
-    width: 1500px;
+-------------------------------- */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
-ul a {
-    color: black;
-    /*background:rgba(500,255,255,0.5); */
-
+.cd-header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-li {
-    float: right;
-    font-size: 30px;
-    style: none;
-    font: times;
-    border: 1px solid black;
+.cd-header #cd-logo {
+  float: right;
+  padding: 0px 50px 0px 0px;
+  margin: 13px 0 0 5%;
+}
+.cd-header #cd-logo img {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 70px;
+  }
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5%;
+  }
+}
+
+.cd-main-nav {
+  float: right;
+  margin-right: 1%;
+  width: 44px;
+  height: 100%;
+  background: url("../img/cd-icon-menu.svg") no-repeat center center;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+.cd-main-nav ul {
+ background: url("../img/cd-icon-menu.svg") no-repeat center center;
+   background-size: 44px 44px;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.cd-main-nav ul.is-visible {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.cd-main-nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: #2f292a;
+  border-top: 1px solid #453c3d;
+  color: #8e7d7f;
+}
+@media only screen and (min-width: 768px) {
+
+.cd-main-nav {
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+}
+
+.cd-main-nav ul {
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 70px;
+}
+
+  .cd-main-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+  .cd-main-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+.cd-main-nav li a.active {
+     color: rgb(153, 204, 255);
+}
+.cd-main-nav a {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+    color: #3d3536;
+    text-transform: uppercase;
     font-weight: bold;
+    font-size: 25px;
 }
-li a {
-        display: block;
-        width: 200px;
-        height: 70px;
-        padding: 10px 0px 10px 0px;
-        text-align: center;
-}
-a:link{
-    text-decoration: none;
-}
-
 a:hover {
-    background-color: black;
-    color: white;
-}
-*/
-/* selected link */
-
-a:active {
-    color: purple;
-}
-#clear {
-    clear: both;
-}
-
-
-/*middle section content*/
-*/
-
-#left {
-        float: left;
-        width: 400px;
-        background: red;
-        font-size: 15px;
-}
-
-
-#center {
-        margin: 0px auto;
-        width: 2000px;
-        background:rgba(500,255,255,0.5);
-        border: 5px solid black;
-        font-size: 20px;
-        height: 850px;
+      color: rgb(153, 204, 255);
+  }
+.no-touch .cd-main-nav a:hover {
+    color: rgb(153, 204, 255);
+  }
 
 }
-#right {
-        float: right;
-        right: 50px;
-        width: 400px;
-        background: blue;
-        font-size: 15px;
-        height: 1000px;
-}
-
-
-
-#email{
-    color: purple;
-    font-size: 30px;
-    float: right;
-    height: 100px;
-    background-color: green;
-    padding: 50px;
-}
-
-
-
-.image1 img{
-    border: 5px solid black;
-    position: relative;
-    left: 100px;
-    top: 230px;
-}
-
-.image2 img{
-    border: 5px solid black;
-    position: relative;
-    top:0px;
-    left: 795px;
-    top: -195px;
-}
-
-.image3 img{
-    position: relative;
-    top: -609px;
-    left: 1492px;
-    padding: 0px;
-    border: 5px solid black;
-}
-
-img.imageLeft {
-    float:left;
-    left: 0%;
-    bottom: 0px;
-    position: relative;
-    width: 150px;
-}
-img.imageMiddle {
-
-    float: left;
-    position: relative;
-    width: 150px;
-}
-img.imageRight{
-    float: right;
-    position: relative;
-    width: 150px;
-}
-
-body, html, main {
-	/* important */
-	height: 100%;
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .cd-fixed-bg {
-	min-height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("ren.woman.jpg");
 }
 
-.cd-fixed-bg.cd-bg-1 {
-  background-image: url("web4.jpg");
-}
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("web4.jpg");
+  background-image: url("concrete1.jpg");
 }
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("web4.jpg");
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 36px;
+  }
 }
-.cd-fixed-bg.cd-bg-4 {
-  background-image: url("ren.womanull.jpg");
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
 }
 
 .cd-scrolling-bg {
-	min-height: 100%;
+  position: relative;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.6);
+  z-index: 2;
 }
+
+/*
+.cd-scrolling-bg.cd-color-1 {
+  background-color: rgb(255, 92, 51);
+  color: #a6989a;
+}
+*/
+
+.cd-scrolling-bg.cd-color-1 {
+  background-color: rgb(255, 153, 51);
+  color: #3d3536;
+  min-height: 100%;
+}
+
+.cd-scrolling-bg.cd-color-2 {
+  background-color: rgb(153, 204, 255);
+  color: #3d3536;
+  height: 20%;
+}
+
+/*
+.cd-scrolling-bg.cd-color-3 {
+  background-color: rgb(255, 92, 51);
+  color: #3d3536;
+}
+*/
+
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+
+
+
+
+
 
 
 

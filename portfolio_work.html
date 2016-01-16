@@ -5,113 +5,165 @@
 		<title>Maya Chopra's portfolio</title>
 		<link rel="stylesheet" href="styles/style.css"/>
         <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>![endif]-->
+        <script>src="./js/hideaddressbar.js"></script> <!---hide address bar - iOS and Android-->
+        <script>src=".js/respond.min.js"></script> <!--media query support for IE8 and under: styles sheets external!--->
+        <meta name="viewport"content="width=deivice-width, initial-scale=1"/>  <!---prevents Iphone from scaling page-->
     </head>
 
 	<body lang="en">
 		<!--Add opening <section> tag below here-->
 
-		<section>
-			<h3>Maya Chopra</h3>
-			<!--Add opening <nav> tag below here-->
-				<nav>
-				<ul>
-					<li>Portfolio</li>
-					<li>Resume</li>
-					<li>LinkedIn Profile</li>
-					<li>Contact</li>
-				</ul>
-				</nav>
-			<!--Add closing <nav> tag above here-->
-		</section>
-		<!--Add closing <section> tag above here-->
-		<!--Add opening <header> tag below here-->
-			<header>
-			<h1>Hi, I'm Maya</h1>
+        <style type="text/css" media="all">
 
-			<h2>A Boston-based designer/developer hybrid with a passion for user experience and the web</h2>
+            #container-nav {
+                background: white;
+            }
+            #container-header {
+                background: rgb(255, 153, 204);
+                height: 350px;
+                width: 100%;
+            }
+            #container-content {
+                padding: 24px 0;
+            }
+            #container-footer {
+                padding: 24px 0;
+                background: rgb(255, 153, 204);
+                color: white;
+            }
+
+            .box {
+                padding: 14px;
+            }
+
+            img{
+            max-width: 100%;
+            }
+            #masthead{
+            color:white;
+            }
+
+        </style>
+
+        <div id="container-nav">
+            <section id="nav" class="wrapper">
+			<h3>Nicole Miller</h3>
+            <!--taking out nav fo mobile construction
+                            <nav>
+                            <ul>
+                                <li>Portfolio</li>
+                                <li>Resume</li>
+                                <li>LinkedIn Profile</li>
+                                <li>Contact</li>
+                            </ul>
+                            </nav> -->
+            </section>
+        </div>
+        <div id="container-header">
+			<header id="masthead" class="wrapper">
+			<h1>Nicole Miller</h1>
+			<h2>A Brussels-based musician: violist, singer, composer</h2>
 			</header>
-		<!--Add closing <header> tag above here-->
-		<!--Add opening <article> tag below here-->
-			<article>
-			<!--Add opening <section> tag below here-->
-				<section>
-				<!--Add opening <header> tag below here-->
-					<header>
-						<h3>My Portfolio</h3>
-	
-						<p>Some of the things I've been working on lately</p>
+        </div>
+        <div id="container-content">
+			<article id="content">
+				<section id="portfolio" class="group">
+					<header class="wrapper">
+						<h3>Music Portfolio</h3>
+						<p>Here are some of the things I can do</p>
 					</header>
-				<!--Add closing <header> tag above here-->
-				<h4>Vitamin T Homepage</h4>
-					<!--Add opening <figure> tag below here-->
+                    <article class="group wrapper">
+				        <h4>Trash à Cordes & Juan Quintero: palais BOZAR</h4>
 					<figure>
-						<img src="arrow1.png">
+						<img src="juanquin.jpg">
 					</figure>
-					<!--Add closing <figure> tag above here-->
-				<h4>RoboHead iPad App</h4>
-						<!--Add opening <figure> tag below here-->
+                    </article>
+                    <article class="group wrapper">
+				        <h4>Trash à Cordes: Canción del Jangadero</h4>
 					<figure>
-						<img src="arrow1.png">
-						<!--Add closing <figure> tag above here-->
+						<img src="trash2.jpg">
 					</figure>
-				<h4>Shareist Homepage</h4>
-						<!--Add opening <figure> tag below here-->
+                    </article>
+                    <article class="group wrapper">
+				        <h4>Trash à Cordes: IMPROVISED and then some</h4>
 					<figure>
-						<img src="arrow1.png">
-						<!--Add closing <figure> tag above here-->
+						<img src="trash3.jpg">
 					</figure>
+                    </article>
+<!--
+                    <article>
+                    <h4>Arco: Jim O'Rourke and Giovanni di Domenico</h4>
+                    <figure>
+                        <img src="arco.jpg">
+                    </figure>
+                    </article>
+
+                    <article>
+                    <h4>Tango: Orquesta Típica la Gentuza</h4>
+                    <figure>
+                        <img src="gentuza1.jpg">
+                    </figure>
+                    </article>
+
+                    <article>
+                    <h4>IMPROVISED plus more</h4>
+                    <figure>
+                        <img src="stgilles.png">
+                    </figure>
+                    </article>
+                    <!--
+                    <article>
+                    <h4>World Music: OVELO</h4>
+                    <figure>
+                        <img src="arco.jpg">
+                    </figure>
+                    </article> -->
 				</section>
-				<!--Add closing <section> tag above here-->
-				<!--Add opening <section> tag below here-->
-				<section>
-				<!--Add opening <header> tag below here-->
-					<header>
-					<h3>My Resume</h3>
+				<section id="CV" class="group">
+					<header class="wrapper">
+					<h3>My CV</h3>
 
 					<p>Current/previous positions and skill set</p>
 					</header>
-				<!--Add closing <header> tag above here-->
-				<article>
-				<h4>Currently</h4>
+                    <article class="wrapper">
+                    <div class="box">
+                        <h4>Currently</h4>
+				        <h5>Designer/Developer</h5>
+				        <h6>Self-employed</h6>
+                        <p>Design and development.</p>
+                    </div>
+                    </article>
+                    <article class="wrapper">
+                    <div class="box">
+				        <h4>Previously</h4>
+				        <h5>Lead UI Designer</h5>
+				        <h6>Aquent University</h6>
+				        <p>Bla.</p>
+                    </div>
+                    </article>
+                    <article class="wrapper">
+                    <div class="box">
+				        <h4>Skills</h4>
 
-				<h5>Designer/Developer</h5>
-
-				<h6>Self-employed</h6>
-
-				<p>Design and development for a two-person studio in Boston, MA. Clients include Boston Red Sox, Sam Adams and Aerosmith</p>
-				</article>
-				<article>
-				<h4>Previously</h4>
-
-				<h5>Lead UI Designer</h5>
-
-				<h6>Aquent University</h6>
-
-				<p>Lead designer and theme developer for AU's home-built CMS. Worked with several other groups at the university as well.</p>
-				</article>
-				<article>
-				<h4>Skills</h4>
-
-				<ul>
-					<li>Photoshop, Fireworks and Illustrator</li>
-					<li>HTML5 &amp; CSS3</li>
-					<li>Responsive Web Design</li>
-					<li>Mobile App (Native and Web) Design</li>
-				</ul>
-				</article>
-				<!--Add opening <footer> tag below here-->
-				<footer>
-				<p>For a full work history, have a look at my LinkedIn Profile</p>
-				</footer>
-				<!--Add closing <footer> tag above here-->
+				            <ul>
+					            <li>Photoshop, Fireworks and Illustrator</li>
+					            <li>HTML5 &amp; CSS3</li>
+					            <li>Responsive Web Design</li>
+					            <li>Mobile App (Native and Web) Design</li>
+				                </ul>
+                    </div>
+                    </article>
+                    <footer class="wrapper">
+				        <p>For a full work history, have a look at my LinkedIn Profile</p>
+                    </footer>
 				</section>
-			<!--Add closing <section> tag above here-->
-		</article>
-			<!--Add closing <article> tag above here-->
-		<!--Add opening <footer> tag below here-->
-		<footer>
-		<p>©2013 all rights reserved. Fill out a form here to get in touch.</p>
+		    </article>
+        </div>
+    <div id="container-footer">
+		<footer id="colophon" class="wrapper">
+		<p>Get in touch Y'all</p>
 		</footer>
-		<!--Add closing <footer> tag above here-->
+    </div>
+
 	</body>
 </html>

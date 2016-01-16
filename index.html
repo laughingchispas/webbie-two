@@ -10,17 +10,18 @@
     </title>
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <script src="js/main.js"></script> <!-- Modernizr -->
-
+    <script>src="./js/hideaddressbar.js"></script> <!---hide address bar - iOS and Android-->
+    <meta name="viewport"content="width=deivice-width, initial-scale=1"/>  <!---prevents Iphone from scaling page-->
 </head>
 
 <body>
 
-    <header class="cd-header">
+    <header class="nm-header">
         <div id="cd-logo"><a href="#0"><img src="arrow1.png" alt="Logo"></a></div>
         <div class ="name">
-            <p>
+            <h2>
                 renaissance woman
-            </p>
+            </h2>
         </div>
 		<nav class="cd-main-nav">
 			<ul>
@@ -35,42 +36,66 @@
 
    <main class="cd-main-content">
 		<div class="cd-fixed-bg cd-bg-1">
-			<h1>
+			<p>
                 :)
-            </h1>
+            </p>
 		</div> <!-- cd-fixed-bg -->
 
 
 		<div class="cd-scrolling-bg cd-color-1">
-			<div class="cd-container">
+			<div class="cd-container1">
 				<h2>
                     Renaissance Woman
                 </h2>
-                <h1>
-                    Jill of All Trades
-				</h1>
                 <h3>
+                    Jill of All Trades
+				</h3>
+                <h4>
                     & Master of some
-                </h3>
+                </h4>
 			</div> <!-- cd-container -->
 		</div> <!-- cd-scrolling-bg -->
 
 		<div class="cd-fixed-bg cd-bg-2">
 			<h2>Pics and contact stuff</h2>
+
+            <div id="container-content">
+                <article id="content">
+                    <section id="portfolio" class="group">
+                        <figure>
+                            <img src="phil.jpg">
+                        </figure>
+                        <figure>
+                            <img src="trash3.jpg">
+                        </figure>
+                        <figure>
+                            <img src="trash2.jpg">
+                        </figure>
+                    </section>
+                </article>
+            </div>
+        </div> <!-- cd-fixed-bg-->
 		</div> <!-- cd-fixed-bg -->
 
 
+
+
         <div class="cd-scrolling-bg cd-color-2">
-            <div class="cd-container">
-                <h1>
-                    Contact me :)
-                </h1>
+            <div class="cd-container2">
+                <p>
+                    Tel: (+32) (0)496 39 00 24
+                </p>
+                <p>
+                    Email: laughingchispas AT gmail.com
+                </p>
             </div> <!-- cd-container -->
         </div> <!-- cd-scrolling-bg -->
 
 	</main> <!-- cd-main-content -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+    <script>src="./js/hideaddressbar.js"></script>
 
 
 </body>

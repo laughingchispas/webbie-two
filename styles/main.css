@@ -156,8 +156,6 @@ h3,h4 {
 	text-transform: uppercase;
 		}
 
-
-
 /* --------------------------------
 
 Modules - reusable parts of our design
@@ -189,7 +187,7 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-img{
+div.img {
       max-width: 100%;
       padding: 0 20px 10px 20px;
 }
@@ -253,7 +251,7 @@ margin: 20px 0 0 0;
   }
 
 
-img {
+div.img {
 width: 50%;
 float: left;
 }
@@ -275,9 +273,9 @@ float: left;
           font-family: Arial, sans-serif;
           color: transparent;
   }
-
-img {
-width: 33%;
+/************!!!!!!!!!!!!FIX THIOS!!!!!!!***********!!!!!!!!!!!!!!********/
+div.img {
+width: 33.333%;
 float: left;
 }
 }
@@ -372,6 +370,24 @@ a:hover {
 
 }
 
+div.img {
+    float: left;
+}
+
+div.img:hover {
+    background-color: white;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 /******************* END ******************************/
 
 
@@ -426,9 +442,6 @@ a:hover {
   background-image: url("concrete1.jpg");
 }
 
-@media only screen and (min-width: 768px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-fixed-bg {

@@ -77,7 +77,6 @@ a {
     	src: local('Anudi Regular'), local('Anudi'),url('fonts/Anudi.ttf') format('truetype');
 }
 
-
 body, html {
   /* important */
   height: 100%;
@@ -95,11 +94,9 @@ body {
 }
 
 .name {
-        width: 30%px;
         float: left;
-        padding: 0px 0px 0px 50px;
         font-family: 'AnudiRegular', Arial, sans-serif;
-        color: transparent;
+        color: black;
 }
 
 .name:hover{
@@ -107,11 +104,10 @@ body {
 }
 
 h1, h2, h3, p {
-    text-align: center;
     font-family: 'AnudiRegular', Arial, sans-serif;
 }
 
-p, #CV li {
+p, #CV {
 		font-size: 1.063em; /* 17px / 16 = 1.063em */
 		line-height: 1.223; /* 1.3 (golden number) / 1.063 = 1.223 */
 		margin: .612em 0;
@@ -174,22 +170,24 @@ Modules - reusable parts of our design
   margin: 0 auto;
   float: left;
 }
-
 .cd-container: {
     width: 50%;
     float: left;
 }
-
 .cd-container::after {
   /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
-
 div.img {
       max-width: 100%;
-      padding: 0 20px 10px 20px;
+      padding: 0 .65em;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+         box-sizing: border-box;
+      }
+      box-sizing: border-box;
 }
 #content {
       margin: 50px 0 18px 0;
@@ -198,43 +196,81 @@ div.img {
       padding: 25px 0;
 }
 
-/* --------------------------------
+/******************NAVIGATION******************/
 
-Main components
+#nav {
+    padding: 0.65em 0;
+    }
 
--------------------------------- */
-.nm-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 6.5em;
-  background: white;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  opacity: .8;
-}
-.nm-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.nm-header #cd-logo {
-  float: right;
-  padding: 0px 20px 0px 0px;
-  margin: 5px 0 0 3%;
-
-}
-.nm-header #cd-logo img {
-  display: block;
+#nav h3 {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#nm-mainbody-header {
-padding: 100px 0 0 0;
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: .65em 0 .2em;
 }
 
-#nm-mainbody-header article{
-margin: 20px 0 0 0;
+#nav li {
+   border-top: 1px solid #eee;
+}
+
+#nav a {
+   display: block;
+   font-size: 1.063em;
+   color: #333;
+   text-decoration: none;
+   padding: .975em 1.3em;
+}
+
+#nav a:hover {
+   background: #f8f8f8;
+}
+
+/* Hide <nav> off-screen http://37signals.com/svn/posts/3126-another-9999px ] */
+
+#nav nav {
+    height: 0;
+    overflow: hidden;
+}
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from {padding: 0;}
+    to {padding: 0;}
+}
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+#nav label {
+    display: block;
+    background: url("img/icon-menu.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+
+/* Show <nav> on-screen / drop-down menu */
+
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
 }
 
 /****************MEDIA QUERY MEDIUM SCREENS*******
@@ -243,132 +279,22 @@ margin: 20px 0 0 0;
 
 @media only screen and (min-width: 500px) {
 
-  .name {
-          float: left;
-          padding: 0px 0px 0px 50px;
-          font-family: 'AnudiRegular', Arial, sans-serif;
-          color: transparent;
-  }
-
-
-div.img {
-width: 50%;
-float: left;
+    }
+    div.img {
+        width: 50%;
+        float: left;
+    }
 }
-
-}
-
-/******************* END ***********************************************************/
-
-
-/****************MEDIA QUERY BIGGER SCREENS*******
-
-*************************************************/
 
 @media only screen and (min-width: 768px) {
-  .name {
-          width: 50%;
-          float: left;
-          padding: 0px 0px 0px 10px;
-          font-family: Arial, sans-serif;
-          color: transparent;
-  }
-/************!!!!!!!!!!!!FIX THIOS!!!!!!!***********!!!!!!!!!!!!!!********/
+
+/************!!!!!!!!!!!!FIX THIS!!!!!!!***********!!!!!!!!!!!!!!********/
 div.img {
 width: 33.333%;
 float: left;
 }
 }
 
-/******************* NAV ******************************************************/
-
-.cd-main-nav {
-  float: right;
-  margin-right: 1%;
-  width: 30px;
-  height: 100%;
-  background: url("../img/cd-icon-menu.svg") no-repeat center center;
-  background-size: 25px 25px;
-  cursor: pointer;
-}
-.cd-main-nav ul {
- background: url("../img/cd-icon-menu.svg") no-repeat center center;
- background-size: 44px 44px;
-  width: 100%;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.cd-main-nav ul.is-visible {
-  -webkit-transform: translateY(50px);
-  -moz-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  -o-transform: translateY(50px);
-  transform: translateY(50px);
-}
-.cd-main-nav a {
-  display: block;
-  height: 50px;
-  padding-left: 5%;
-  background: #2f292a;
-  border-top: 1px solid #453c3d;
-  color: #8e7d7f;
-}
-@media only screen and (min-width: 768px) {
-
-.cd-main-nav {
-    width: auto;
-    height: auto;
-    background: none;
-    cursor: auto;
-}
-
-.cd-main-nav ul {
-    position: static;
-    width: auto;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-}
-
-  .cd-main-nav ul.is-visible {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-}
-  .cd-main-nav li {
-    display: inline-block;
-    margin-left: 0.1em;
-  }
-
-.cd-main-nav li a.active {
-     color: rgb(153, 204, 255);
-}
-.cd-main-nav a {
-    display: inline-block;
-    height: auto;
-    line-height: normal;
-    background: transparent;
-    padding: .2em 0.2em;
-    border-top: none;
-    color: #3d3536;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-a:hover {
-      color: rgb(153, 204, 255);
-  }
-.no-touch .cd-main-nav a:hover {
-    color: rgb(153, 204, 255);
-  }
-
-}
 
 div.img {
     float: left;
@@ -388,7 +314,6 @@ div.desc {
     text-align: center;
 }
 
-/******************* END ******************************/
 
 
 
@@ -450,7 +375,6 @@ div.desc {
 
 }
 
-/******************* SCROLLING BGs *************************/
 .cd-scrolling-bg {
   position: relative;
   padding: 4em 0;
@@ -475,7 +399,7 @@ div.desc {
   background-color: rgb(153, 204, 255);
   color: #3d3536;
   padding: 24px 0;
-  min-height: 150px;
+  min-height: 50%;
 }
 
 /*
@@ -485,6 +409,16 @@ div.desc {
 }
 */
 
+/** IE support */
+.ie .img {
+    *behavior: url("http://absolute-path.com/js/boxsizing.htc");
+}
+
+
+/* ******************************************
+    Media Queries
+****************************************** */
+
 @media only screen and (min-width: 400px) {
   .cd-scrolling-bg {
     padding: 1em 0;
@@ -493,12 +427,25 @@ div.desc {
     }
 }
 
-
 @media only screen and (min-width: 500px) {
   .cd-scrolling-bg {
     padding: 1em 0;
     font-weight: 300;
     }
+
+.cd-scrolling-bg.cd-color-2 {
+  background-color: rgb(153, 204, 255);
+  color: #3d3536;
+  padding: 24px 0;
+  min-height: 30%;
+}
+
+.cd-scrolling-bg.cd-color-2 {
+  background-color: rgb(153, 204, 255);
+  color: #3d3536;
+  padding: 24px 0;
+  min-height: 30%;
+}
 }
 
 @media only screen and (min-width: 800px) {
@@ -506,5 +453,74 @@ div.desc {
     padding: 2em 0;
     font-weight: 300;
     }
+
+.cd-scrolling-bg.cd-color-2 {
+  background-color: rgb(153, 204, 255);
+  color: #3d3536;
+  padding: 24px 0;
+  min-height: 20%;
+  }
+
+
+    /*     1. Remove padding from one-column layout style.   */
+    #nav {
+        padding: 0;
+    }
+
+    /*     2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
+
+    #nav h3 {
+         margin: .39em 1.3em 0 0;
+    }
+
+    /*
+    3. Remove <label> element.
+    */
+
+    #nav label {
+        display: none;
+    }
+
+    /*
+    4. Show <nav> on-screen.
+    */
+
+    #nav nav {
+        height: auto;
+        overflow: visible;
+    }
+
+    /*
+    5. Remove border and margin from one-column layout style.
+    */
+
+    #nav ul {
+        border: 0;
+        margin: 0;
+        color: pink;
+        }
+
+    /*    6. Display <li> as inline for horizontal menu layout.    7. Remove border.     */
+
+    #nav li {
+        display: inline;
+        border: 0;
+
+    }
+
+
+    /*     8. Display <a> from block to inline-block to remain inline for horizontal menu layout.     */
+
+    #nav a {
+        display: inline-block;
+        }
+
+}
+
+#nav a {
+   font-size: 1.063em;
+   padding: .975em 1em;
+}
+
 }
 

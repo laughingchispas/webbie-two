@@ -15,50 +15,29 @@
 
         <style type="text/css" media="all">
 
-            #container-nav {
-                background: white;
-            }
-            #container-header {
-                background: rgb(255, 153, 204);
-                height: 350px;
-                width: 100%;
-            }
-            #container-content {
-                padding: 24px 0;
-            }
-            #container-footer {
-                padding: 24px 0;
-                background: rgb(255, 153, 204);
-                color: white;
-            }
-
-            .box {
-                padding: 14px;
-            }
-
-            img{
-            max-width: 100%;
-            }
-            #masthead{
-            color:white;
-            }
-
         </style>
 
-        <div id="container-nav">
-            <section id="nav" class="wrapper">
-			<h3>Nicole Miller</h3>
-            <!--taking out nav fo mobile construction
-                            <nav>
-                            <ul>
-                                <li>Portfolio</li>
-                                <li>Resume</li>
-                                <li>LinkedIn Profile</li>
-                                <li>Contact</li>
-                            </ul>
-                            </nav> -->
-            </section>
-        </div>
+
+
+
+            <header id="nav" class="wrapper">
+			    <h3>Nicole Miller</h3>
+                    <!-- Checkbox Hack markup -->
+                    <input type="checkbox" id="toggle" />
+                    <label for="toggle" onclick>Menu</label>
+                    <!-- /Checkbox Hack markup -->
+                <nav>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="./">LinkedIn Profile</a></li> <!-- No destination yet -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+
         <div id="container-header">
 			<header id="masthead" class="wrapper">
 			<h1>Nicole Miller</h1>
@@ -161,6 +140,26 @@
         </div>
     <div id="container-footer">
 		<footer id="colophon" class="wrapper">
+            <form>
+                <fieldset class="wrapper">
+                    <legend>Contact</legend>
+                    <ul class="group">
+                        <li class="name">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" />
+                        </li>
+                        <li class="email">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" />
+                        </li>
+                        <li class="message">
+                            <label for="message">Say Hello</label>
+                            <textarea id="message" name="message"></textarea>
+                        </li>
+                    </ul>
+                    <input class="send" type="submit" name="submit" value="Send" />
+                </fieldset>
+            </form>
 		<p>Get in touch Y'all</p>
 		</footer>
     </div>

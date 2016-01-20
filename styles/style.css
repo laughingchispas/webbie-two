@@ -53,7 +53,9 @@ html {
 body {
 	min-height: 100%;
 	font-size: 100%;
-}
+    }
+
+
 
 article,
 aside,
@@ -259,8 +261,218 @@ figure,.box {
 }
 
 #nav,#masthead,#content,#colophon {
-                margin: 0 18x;
+    margin: 0 5.5%;
+}
+#container-nav {
+    background: white;
+}
+
+#container-header {
+    background: rgb(255, 153, 204);
+    height: 350px;
+    width: 100%;
+}
+
+#container-content {
+    padding: 24px 0;
+}
+
+
+#container-footer {
+    padding: 24px 0;
+    background: rgb(255, 153, 204);
+    color: white;
+}
+
+            .box {
+                padding: 14px;
             }
+
+            img{
+            max-width: 100%;
+            }
+            #masthead{
+            color:white;
+            }
+
+
+#nav{
+   padding: 0.65em, 0:
+}
+
+           #nav h3{
+              float: left;
+              text-transform: uppercase;
+              }
+
+            #nav ul {
+                list-style: none;
+                padding: 0;
+                border-bottom: 1px solid #eee;
+                margin: .65em 0 .39em;
+            }
+
+            #nav li {
+                          border-top: 1px solid #eee;
+                       }
+            #nav a {
+                  display: block;
+                  font-size: 1.063em;
+                  color: #333;
+                  text-decoration: none;
+                  padding: .975em 1.3em;
+             }
+
+            #nav a:hover {
+                background: #f8f8f8;
+            }
+
+            /*
+            Hide <nav> off-screen
+            http://37signals.com/svn/posts/3126-another-9999px ]
+            */
+
+/* ******************************************
+    Advanced Checkbox Hack
+****************************************** */
+
+#nav nav {
+    height: 0;
+    overflow: hidden;
+}
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+/*
+1. Hide <nav> off-screen / -9999px/-999em technique works best.
+*/
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+        @-webkit-keyframes bugfix {
+            from {padding: 0;}
+            to {padding: 0;}
+        }
+
+/* 2. Restore <label> element (Removed in min-width: 45em media query).
+3. Present <label> as navicon using a background-image.
+4. Hide <label> content - "Menu" - off-screen using negative text-indent.
+5. Style <label> to behave like a link using cursor and user-select properties.
+**background image check box**
+*/
+
+#nav label {
+    display: block;
+    background: url("img/icon-menu.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+
+/*
+6. Show <nav> on-screen / drop-down menu
+*/
+
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* Form / Basic Layout */
+
+form {
+    padding: 0 0 1.3em;
+    }
+
+form ul {
+    list-style: none;
+    padding: 1.3em 0 0;
+    }
+
+form li {
+    padding: 0 0 .65em;
+    }
+
+legend {
+	font-size: 1.382em;
+	line-height: 1.223;
+	}
+
+label {
+    display: block;
+	font-size: 1em;
+	line-height: 1.56;
+    padding: 0 0 .325em;
+	}
+
+legend, label {
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.3;
+	font-weight: 500;
+    padding: .65em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    padding-bottom: 10%;
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    }
+
+.send {
+    display: inline-block;
+    max-width: 30em;
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background: black;
+    margin: .65em .26em;
+    padding: .975em;
+    border: 0;
+    border-radius: 1.3em;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+    }
+
+.send:hover {
+    background: #6f6f6f;
+    }
+
+.send:active,
+.send:focus {
+    background: #555;
+    }
+
+
+
 
 
 /* ******************************************
@@ -284,7 +496,7 @@ figure,.box {
 ********************************************/
 
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 780px){
 
             #portfolio article, #CV article{
             float:left;
@@ -312,8 +524,90 @@ figure,.box {
 
             #nav,#masthead,#content,#colophon {
                             margin: 0 5.55;
-                        }
-            }
+                            }
+
+
+
+           .name, .email {
+               float: left;
+               width: 50%;
+               -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+               box-sizing: border-box;
+               }
+
+           .name {
+               padding-right: .65em;
+               }
+
+           .email {
+               padding-left: .65em;
+               }
+
+           .send {
+               width: 48.6%;
+               }
+
+
+    /* Remove padding from one-column layout style. */
+    #nav {
+        padding: 0;
+    }
+
+    /* Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
+    #nav h3 {
+        margin: .39em 1.3em 0 0;
+    }
+    /* Remove <label> element. */
+    #nav label {
+        display: none;
+    }
+    /* Show <nav> on-screen. */
+    #nav nav {
+        height: auto;
+        overflow: visible;
+    }
+    /* Display <li> as inline for horizontal menu layout and Remove border.*/
+    #nav li {
+        display: inline;
+        border: 0;
+        float: right;
+    }
+    /* Display <a> from block to inline-block to remain inline for horizontal menu layout. */
+    #nav a {
+        display: inline-block;
+    }
+
+    #nav ul {
+        border-bottom: none;
+    }
+
+    #masthead h1 {
+        clear: both;
+    }
+}
+
+/********************************************
+	Media Queries for Screen wider than 960px
+********************************************/
+
+@media (min-width: 60em) {
+
+.name, .email {
+    padding-right: 1.3em;
+    padding-left: 0;
+    clear: both;
+    }
+
+.message textarea {
+    width: 50%;
+    }
+
+.send {
+    width: 25%;
+    margin-left: 50%;
+    }
+}
 
 
    /********************

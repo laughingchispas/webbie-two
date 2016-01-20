@@ -7,49 +7,71 @@
     </title>
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <script src="js/main.js"></script> <!-- Modernizr -->
-    <script>src="./js/hideaddressbar.js"></script> <!---hide address bar - iOS and Android-->
-    <meta name="viewport"content="width=deivice-width, initial-scale=1"/>  <!---prevents Iphone from scaling page-->
+    <script src="./js/hideaddressbar.js"></script> <!---hide address bar - iOS and Android-->
+    <meta name="viewport" content="width=deivice-width, initial-scale=1"/>  <!---prevents Iphone from scaling page-->
+
+    <style type="text/css" media="all">
+
+
+    </style>
+
+
 </head>
 
 <body>
 
-    <header class="nm-header">
-        <div id="cd-logo"><a href="#0"><img src="arrow1.png" alt="Logo"></a></div>
+<header id=nav class="nm-header">
+        <!-- hide for now, too
+        <div id="cd-logo">
+            <a href="#0"><img src="arrow1.png" alt="Logo">
+            </a>
+        </div>  -->
+        <!--
         <div class ="name">
-            <h4>
+            <h3>
                 renaissance woman
-            </h4>
+            </h3>
+        </div> -->
+        <div class="name">
+        <h3>
+            renaissance woman
+        </h3>
         </div>
-		<nav class="cd-main-nav">
-			<ul>
+            <!-- Checkbox Hack markup -->
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" onclick>Menu</label>
+            <!-- /Checkbox Hack markup -->
+        <nav>
+            <ul>
                 <li><a class="active" href="index.html">Home</a>
-                <li><a href="music.html">Music</a></li>
+                <li><a href="music.html">Music</a>
                 <li><a href="languages.html">Languages</a></li>
                 <li><a href="teacher.html">teaching</a></li>
-                <li><a href="contact.html">contact</a></li>
-			</ul>
-		</nav> <!-- cd-main-nav -->
-	</header>
+                <li><a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+</header>
+
 
    <main class="cd-main-content">
 		<div class="cd-fixed-bg cd-bg-1">
-			<p>
+			<h1>
                 :)
-            </p>
+            </h1>
 		</div> <!-- cd-fixed-bg -->
 
 
 		<div class="cd-scrolling-bg cd-color-1">
 			<div class="cd-container1">
-				<h2>
+				<h1>
                     Renaissance Woman
-                </h2>
-                <h3>
+                </h1>
+                <h2>
                     Jill of All Trades
-				</h3>
-                <h3>
+				</h2>
+                <h2>
                     & Master of some
-                </h3>
+                </h2>
 			</div> <!-- cd-container -->
 		</div> <!-- cd-scrolling-bg -->
 
@@ -78,7 +100,6 @@
                 </article>
             </div>
         </div> <!-- cd-fixed-bg-->
-		</div> <!-- cd-fixed-bg -->
 
 
 
@@ -98,7 +119,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/main.js"></script> <!-- Resource jQuery -->
 
-    <script>src="./js/hideaddressbar.js"></script>
+    <script src="./js/hideaddressbar.js"></script>
 
 
 </body>

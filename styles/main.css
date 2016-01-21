@@ -77,6 +77,30 @@ a {
     	src: local('Anudi Regular'), local('Anudi'),url('fonts/Anudi.ttf') format('truetype');
 }
 
+@font-face {
+    	font-family: 'Cinzel-Regular';
+    	src: url('fonts/cinzel/Cinzel-Regular.eot');
+    	src: local('Cinzel-Regular'), local('cinzel'),url('fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    	font-family: 'CarbonType';
+    	src: url('fonts/CarbonType/carbontype.eot');
+    	src: local('CarbonType'), local('CarbonType'),url('fonts/CarbonType/carbontype.ttf') format('truetype');
+}
+
+@font-face {
+    	font-family: 'Brushstroke';
+    	src: url('fonts/Brushstroke/BRUSHSTROKE.eot');
+    	src: local('Brushstroke'), local('CarbonType'),url('fonts/Brushstroke/BRUSHSTROKE.ttf') format('truetype');
+}
+
+@font-face {
+    	font-family: 'Boycott';
+    	src: url('fonts/Boycott/BOYCOTT.eot');
+    	src: local('Boycott'), local('Boycott'),url('fonts/Boycott/BOYCOTT.ttf') format('truetype');
+}
+
 body, html {
   /* important */
   height: 100%;
@@ -88,42 +112,49 @@ html {
     }
 
 body {
-    font-family: "AnudiRegular", Arial, Geneva,sans-serif;
+    font-family: 'Cinzel-Regular', Arial, Geneva,sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+
+
+h1, h2 {
+    font-family: 'CarbonType', Arial, sans-serif;
+}
+
+
+h3   {font-family: 'CarbonType', Arial, sans-serif;
+}
+
 .name {
         float: left;
-        font-family: 'AnudiRegular', Arial, sans-serif;
+        font-family: 'CarbonType', Arial, sans-serif;
         color: black;
+        padding: 0 0 0 10px;
 }
 
 .name:hover{
-    color: rgb(255, 153, 51);
+    color: rgb(255, 153, 128);
 }
 
-h1, h2, h3, p {
-    font-family: 'AnudiRegular', Arial, sans-serif;
-}
 
-p, #CV {
+p {
 		font-size: 1.063em; /* 17px / 16 = 1.063em */
 		line-height: 1.223; /* 1.3 (golden number) / 1.063 = 1.223 */
 		margin: .612em 0;
+		text-align: right;
 			}
-
-p {
-    text-align: right;
-    }
 
 h1,h2,h3,h4,h5,h6 {
 	    font-weight: 100;
 	    }
 
 h1 {
-	font-size: 3.189em;
-	line-height: 1.223;
+	font-size: 2.126em;
+    line-height: 1.223;
+    text-align: center;
+    text-transform: uppercase;
 		}
 
 h2  {
@@ -143,13 +174,8 @@ h3 {
 h4 {
 	font-size: 1.063em; /* 17px / 16 = 1.063em */
     line-height: 1.223;
-	text-align: left;
-	font-family: 'AnudiRegular', Arial, sans-serif;
-		}
-
-h3,h4 {
-	font-weight: 300;
-	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Cinzel-Regular', Arial, sans-serif;
 		}
 
 /* --------------------------------
@@ -166,35 +192,32 @@ Modules - reusable parts of our design
 
 .cd-container2 {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 50%;
   margin: 0 auto;
   float: left;
 }
-.cd-container: {
-    width: 50%;
-    float: left;
-}
+
 .cd-container::after {
   /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
-div.img {
+
+/*
+#portfolio img {
       max-width: 100%;
       padding: 0 .65em;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
          box-sizing: border-box;
       }
-      box-sizing: border-box;
-}
-#content {
-      margin: 50px 0 18px 0;
-}
+      */
+
+
 #container-content {
       padding: 25px 0;
 }
+
 
 /******************NAVIGATION******************/
 
@@ -273,46 +296,36 @@ body {
     overflow: hidden;
 }
 
-/****************MEDIA QUERY MEDIUM SCREENS*******
 
-*************************************************/
-
-@media only screen and (min-width: 500px) {
-
-    }
-    div.img {
-        width: 50%;
-        float: left;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/************!!!!!!!!!!!!FIX THIS!!!!!!!***********!!!!!!!!!!!!!!********/
-div.img {
-width: 33.333%;
-float: left;
-}
-}
-
-
-div.img {
-    float: left;
-}
-
-div.img:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-div.img img {
+#portfolio img {
     width: 100%;
-    height: auto;
+    padding: 10px 30px 10px 30px;
+
 }
+
+#secondset img {
+    width: 100%;
+    padding: 0 30px 0 30px;
+
+}
+
+#portfolio img:hover {
+    background-color: red;
+}
+
+#secondset img:hover {
+    background-color: pink;
+}
+
+.secondset: {
+    padding: 50px 0 600px 0;
+    }
 
 div.desc {
     padding: 15px;
     text-align: center;
 }
+
 
 
 
@@ -377,7 +390,6 @@ div.desc {
 
 .cd-scrolling-bg {
   position: relative;
-  padding: 4em 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
@@ -390,16 +402,16 @@ div.desc {
 */
 
 .cd-scrolling-bg.cd-color-1 {
-  background-color: rgb(255, 153, 51);
+  background-color: rgb(153, 204, 255);
   color: #3d3536;
-  height: 10.4em;
+  height: 8.8em;
+  padding: 20px 0 0 0;
 }
 
 .cd-scrolling-bg.cd-color-2 {
   background-color: rgb(153, 204, 255);
   color: #3d3536;
-  padding: 24px 0;
-  min-height: 50%;
+  height: 6.5em;
 }
 
 /*
@@ -421,7 +433,6 @@ div.desc {
 
 @media only screen and (min-width: 400px) {
   .cd-scrolling-bg {
-    padding: 1em 0;
     line-height: 1;
     font-weight: 300;
     }
@@ -429,21 +440,13 @@ div.desc {
 
 @media only screen and (min-width: 500px) {
   .cd-scrolling-bg {
-    padding: 1em 0;
     font-weight: 300;
     }
 
-.cd-scrolling-bg.cd-color-2 {
-  background-color: rgb(153, 204, 255);
-  color: #3d3536;
-  padding: 24px 0;
-  min-height: 30%;
-}
 
 .cd-scrolling-bg.cd-color-2 {
   background-color: rgb(153, 204, 255);
   color: #3d3536;
-  padding: 24px 0;
   min-height: 30%;
 }
 }

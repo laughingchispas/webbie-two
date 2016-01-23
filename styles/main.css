@@ -135,7 +135,7 @@ h3   {font-family: 'CarbonType', Arial, sans-serif;
 }
 
 .name:hover{
-    color: rgb(255, 153, 128);
+    color: black;
 }
 
 
@@ -146,15 +146,16 @@ p {
 		text-align: right;
 			}
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h6 {
 	    font-weight: 100;
 	    }
 
 h1 {
-	font-size: 2.126em;
+	font-size: 1.6em;
     line-height: 1.223;
     text-align: center;
-    text-transform: uppercase;
+    color: rgb(255, 153, 128);
+    font-weight: 500;
 		}
 
 h2  {
@@ -171,6 +172,11 @@ h3 {
 	line-height: 1.176;
 		}
 
+h6 {
+	font-size: 1.25em; /* 1.3 x 1.063*/
+	line-height: 1.176;
+		}
+
 h4 {
 	font-size: 1.063em; /* 17px / 16 = 1.063em */
     line-height: 1.223;
@@ -178,51 +184,78 @@ h4 {
 	font-family: 'Cinzel-Regular', Arial, sans-serif;
 		}
 
+h5 {
+    font-size: 0.9em;
+    line-height 1.223;
+    text-align: right;
+    font-weight: 500;
+    }
+
+/*
+h4 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+ */
+
+
 /* --------------------------------
 
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container1 {
+.container1 {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
 }
 
-.cd-container2 {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  margin: 0 auto;
+.titleFooter {
+    width: 50.01%;
+    }
+
+.titleFooter h2 {
+    text-align: right;
+    padding: 0.2em 0 0 0;
+    }
+
+.container2 {
+  width: 20%;
   float: left;
+  padding: 0.5em 0 0 0;
 }
 
-.cd-container::after {
+.container3 {
+ width: 80%;
+ float: left;
+ padding: 0.5em 0 0 0;
+}
+
+.container3 h5 {
+ text-align: left;
+}
+
+.container::after {
   /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
 
-/*
-#portfolio img {
-      max-width: 100%;
-      padding: 0 .65em;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-         box-sizing: border-box;
-      }
-      */
-
-
-#container-content {
-      padding: 25px 0;
-}
-
+.logo {
+    float: left;
+    padding: .1em 0 0 .3em;
+    }
 
 /******************NAVIGATION******************/
 
 #nav {
-    padding: 0.65em 0;
+    padding: 0.55em 0;
     }
 
 #nav h3 {
@@ -237,7 +270,7 @@ Modules - reusable parts of our design
     list-style: none;
     padding: 0;
     border-bottom: 1px solid #eee;
-    margin: .65em 0 .2em;
+    margin: .55em 0 .2em;
 }
 
 #nav li {
@@ -297,42 +330,25 @@ body {
 }
 
 
-#portfolio img {
-    width: 100%;
-    padding: 10px 30px 10px 30px;
-
-}
-
-#secondset img {
-    width: 100%;
-    padding: 0 30px 0 30px;
-
-}
-
-#portfolio img:hover {
-    background-color: red;
-}
-
-#secondset img:hover {
-    background-color: pink;
-}
-
-.secondset: {
-    padding: 50px 0 600px 0;
+.group img, .secondset img{
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
     }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.group img{
+    padding: 10px 0;
 }
 
-
-
+.secondset {
+    padding: 10px 0 20px 0;
+    }
 
 
 /******************************* MAIN CONTENT *********************************************/
 
-.cd-main-content {
+.main-content {
   /* you need to assign a min-height to the main content so that the children can inherit it*/
   height: 100%;
   position: relative;
@@ -342,7 +358,7 @@ div.desc {
 
 /******************* FIXED BGs *************************/
 
-.cd-fixed-bg {
+.fixed-bg {
   position: relative;
   min-height: 100%;
   background-size: cover;
@@ -351,7 +367,7 @@ div.desc {
   z-index: 1;
 }
 
-.cd-fixed-bg h1, .cd-fixed-bg h2 {
+.fixed-bg h1, .fixed-bg h2 {
   position: absolute;
   left: 50%;
   top: 8%;
@@ -366,56 +382,59 @@ div.desc {
   max-width: 1170px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: white;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.9);
 }
 
-.cd-fixed-bg {
+.fixed-bg {
     background-attachment: fixed;
   }
 
-.cd-fixed-bg.cd-bg-1 {
+.fixed-bg.cd-bg-1 {
   background-image: url("ren.woman.jpg");
 }
 
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("concrete1.jpg");
+.fixed-bg.cd-bg-2 {
+  background-image: url("img/concrete2.jpg");
 }
 
 }
 @media only screen and (min-width: 1170px) {
-  .cd-fixed-bg {
+  .fixed-bg {
     background-attachment: fixed;
   }
 
 }
 
-.cd-scrolling-bg {
+.scrolling-bg {
   position: relative;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 
+.container1 h1 {
+    border-bottom: 1px;
+    }
+
 /*
-.cd-scrolling-bg.cd-color-1 {
+.crolling-bg.cd-color-1 {
   background-color: rgb(255, 92, 51);
   color: #a6989a;
 }
 */
 
-.cd-scrolling-bg.cd-color-1 {
-  background-color: rgb(153, 204, 255);
+.scrolling-bg.cd-color-1 {
+  background-image: url("img/concrete2.jpg");
   color: #3d3536;
-  height: 8.8em;
-  padding: 20px 0 0 0;
 }
 
-.cd-scrolling-bg.cd-color-2 {
+.scrolling-bg.cd-color-2 {
   background-color: rgb(153, 204, 255);
   color: #3d3536;
   height: 6.5em;
 }
 
 /*
-.cd-scrolling-bg.cd-color-3 {
+.scrolling-bg.cd-color-3 {
   background-color: rgb(255, 92, 51);
   color: #3d3536;
 }
@@ -426,104 +445,178 @@ div.desc {
     *behavior: url("http://absolute-path.com/js/boxsizing.htc");
 }
 
+/* blurring property */
+.imagecontainer img {
+
+	-webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagecontainer img:hover {
+	-webkit-filter: blur(6px);
+	filter: blur(6px);
+}
+
+/*CONTACT PAGE STYLES*/
+
+.imgcontact img{
+    width: 200px;
+    border-radius: 100px;}
+
+.imgcontact img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imgcontact:hover img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.blurcontainer {
+    padding: 20px 0 0 50px;}
 
 /* ******************************************
     Media Queries
 ****************************************** */
 
-@media only screen and (min-width: 400px) {
-  .cd-scrolling-bg {
-    line-height: 1;
-    font-weight: 300;
+@media only screen and (min-width: 345px) {
+    h6 {
+    	font-size: 1.382em; /* 1.3 x 1.063*/
+    	line-height: 1.176;
+    		}
+
+@media only screen and (min-width: 430px) {
+    h1 {
+        font-size: 2.126em;
+        line-height: 1.223;
+    }
+     .group img, .secondset img{
+            width: 400px;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+      }
+     .group img{
+             padding: 15px;
+      }
+     .secondset {
+            padding: 15px 0 15px 0;
+      }
+}
+
+.scrolling-bg.cd-color-2 {
+    height: 7.5em;
+}
+
+@media only screen and (min-width: 530px) {
+    .group img, .secondset img{
+        width: 450px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        }
+    .group img{
+        padding: 20px;
+    }
+    .secondset {
+        padding: 20px 0 70px 0;
     }
 }
 
-@media only screen and (min-width: 500px) {
-  .cd-scrolling-bg {
-    font-weight: 300;
+@media only screen and (min-width: 720px) {
+
+    .logo {
+    padding: .55em 0 0 .3em
     }
 
-
-.cd-scrolling-bg.cd-color-2 {
-  background-color: rgb(153, 204, 255);
-  color: #3d3536;
-  min-height: 30%;
-}
-}
-
-@media only screen and (min-width: 800px) {
-  .cd-scrolling-bg {
-    padding: 2em 0;
-    font-weight: 300;
+    .name {
+            float: left;
+            font-family: 'CarbonType', Arial, sans-serif;
+            color: transparent;
+            padding: 0 0 0 10px;
     }
 
-.cd-scrolling-bg.cd-color-2 {
-  background-color: rgb(153, 204, 255);
-  color: #3d3536;
-  padding: 24px 0;
-  min-height: 20%;
-  }
+    .name:hover{
+        color: black;
+    }
 
-
-    /*     1. Remove padding from one-column layout style.   */
+  /*     1. Remove padding from one-column layout style.   */
     #nav {
         padding: 0;
     }
-
     /*     2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
-
     #nav h3 {
          margin: .39em 1.3em 0 0;
     }
-
-    /*
-    3. Remove <label> element.
-    */
-
+    /*     3. Remove <label> element.     */
     #nav label {
         display: none;
     }
-
-    /*
-    4. Show <nav> on-screen.
-    */
-
+    /*    4. Show <nav> on-screen.    */
     #nav nav {
         height: auto;
         overflow: visible;
     }
-
-    /*
-    5. Remove border and margin from one-column layout style.
-    */
-
+    /*     5. Remove border and margin from one-column layout style.   */
     #nav ul {
         border: 0;
         margin: 0;
-        color: pink;
-        }
-
+    }
     /*    6. Display <li> as inline for horizontal menu layout.    7. Remove border.     */
-
     #nav li {
         display: inline;
         border: 0;
-
     }
-
-
     /*     8. Display <a> from block to inline-block to remain inline for horizontal menu layout.     */
-
     #nav a {
         display: inline-block;
+        font-size: .93em;
+        padding: .975em .2em;
         }
 
+.scrolling-bg.cd-color-2 {
+    height: 8.5em;
+}
+
+@media only screen and (min-width: 900px) {
+  .scrolling-bg {
+    padding: 20px 0 0 0;
+    }
+
+.imagecontainer img{
+     width: 300px;
+     float: left;
+     padding: 0;
+     margin: 0;
+  }
+
+.imagecontainer {
+    width: 900px;
+    margin: 0 auto;
+    }
+
+.secondset {
+    padding: 50px 0 500px 0;
+    clear: both;
+    width: 900px;
+    margin: 0 auto;
+    }
+
+#secondset img {
+    width: 450px;
+    float: left;
 }
 
 #nav a {
-   font-size: 1.063em;
-   padding: .975em 1em;
-}
+      font-size: 1.1em;
+      padding: .975em .8em;}
 
+.scrolling-bg.cd-color-2 {
+    height: 10.5em;
 }
+ }
+
 

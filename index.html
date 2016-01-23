@@ -21,23 +21,20 @@
 <body>
 
 <header id=nav class="nm-header">
-        <!-- hide for now, too
-        <div id="cd-logo">
-            <a href="#0"><img src="arrow1.png" alt="Logo">
-            </a>
-        </div>  -->
-
-
+    <div class =logo>
+        <img src="images/fleurdelis.pink.png">
+    </div>
         <div class="name">
-        <h3>
+        <h6>
             renaissance woman
-        </h3>
+        </h6>
         </div>
             <!-- Checkbox Hack markup -->
                 <input type="checkbox" id="toggle" />
                 <label for="toggle" onclick>Menu</label>
             <!-- /Checkbox Hack markup -->
         <nav>
+            <div class="bar">
             <ul>
                 <li><a class="active" href="index.html">Home</a>
                 <li><a href="music.html">Music</a>
@@ -45,27 +42,56 @@
                 <li><a href="teacher.html">teaching</a></li>
                 <li><a href="contact.html">Contact</a>
             </ul>
+            </div>
         </nav>
 </header>
-
-
-   <main class="cd-main-content">
-		<div class="cd-fixed-bg cd-bg-1">
-
+   <main class="main-content">
+		<div class="fixed-bg cd-bg-1">
 		</div> <!-- cd-fixed-bg -->
 
 
-		<div class="cd-scrolling-bg cd-color-1">
-			<div class="cd-container1">
-				<h1>
-                    Renaissance Woman
-                </h1>
-                <h4>
-                    Jill of Many Trades
-				</h4>
-            </div> <!-- cd-container -->
-		</div> <!-- cd-scrolling-bg -->
+       <div class="scrolling-bg cd-color-1">
+           <div class="container1">
+               <h1 class="container1">
+                   renaissance woman
+               </h1>
+               <h4>
+                   jill of many trades
+               </h4>
+           </div> <!-- cd-container -->
 
+           <article id="content">
+               <section id="group" class="group">
+                   <div class="imagecontainer">
+                   <figure>
+                       <div class="img1">
+                           <img src="images/arcosquare.jpg">
+                       </div>
+                   </figure>
+                   <figure>
+                       <div class="img2">
+                           <img src="images/arcosquare.jpg">
+                       </div>
+                   </figure>
+                   <figure>
+                       <div class="img3">
+                           <img src="images/arcosquare.jpg">
+                       </div>
+                   </figure>
+                   </div>
+               </section>
+
+               <section class="secondset" id="secondset">
+                   <figure>
+                       <img src="images/arcosquare.jpg">
+                   </figure>
+                   <figure>
+                       <img src="images/arcosquare.jpg">
+                   </figure>
+               </section>
+       </div> <!-- cd-scrolling-bg -->
+
+       <!--
 		<div class="cd-fixed-bg cd-bg-2">
             <div id="container-content">
                 <article id="content">
@@ -93,23 +119,34 @@
                         <figure>
                             <img src="images/gentuza1.jpg">
                         </figure>
-                        </section>
+                    </section>
                 </article>
             </div>
         </div> <!-- cd-fixed-bg-->
 
-
-
-
-        <div class="cd-scrolling-bg cd-color-2">
-            <div class="cd-container2">
-                <p>
-                    Tel: (+32) (0)496 39 00 24
-                </p>
-                <p>
-                    Email: laughingchispas AT gmail.com
-                </p>
+        <div class="scrolling-bg cd-color-2">
+            <div class="titleFooter">
+                <h2>
+                    Contact
+                </h2>
+            </div>
+            <div class="container2">
+                <h5>
+                    Tel:
+                </h5>
+                <h5>
+                    Email:
+                </h5>
             </div> <!-- cd-container -->
+            <div class="container3">
+                <h5>
+                    (+32) (0)496 39 00 24
+                </h5>
+                <h5>
+                    laughingchispas AT gmail.com
+                </h5>
+            </div> <!-- cd-container -->
+
         </div> <!-- cd-scrolling-bg -->
 
 	</main> <!-- cd-main-content -->

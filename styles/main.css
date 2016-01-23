@@ -215,12 +215,22 @@ Modules - reusable parts of our design
   margin: 0 auto;
 }
 
+.footerlogo {
+    width: 20%;
+    float: left;
+}
+
+.footerlogo img {
+    padding: 15px 0 0 10px;
+}
+
 .titleFooter {
-    width: 50.01%;
+    width: 80%;
+    float: left;
     }
 
 .titleFooter h2 {
-    text-align: right;
+    text-align: left;
     padding: 0.2em 0 0 0;
     }
 
@@ -617,6 +627,60 @@ body {
 .scrolling-bg.cd-color-2 {
     height: 10.5em;
 }
+
+.footerlogo {
+    width: 50%;
+    float: right;
+    position: relative
+}
+
+.footerlogo img {
+    position: absolute;
+    top: -0.3em;
+    left: 2em;
+}
+
+.titleFooter {
+    width: 50%;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    clear: left;
+    }
+
+.titleFooter h2 {
+    text-align: center;
+    padding: 0.2em 0 0 0;
+    }
+
+.container2 {
+  width: 15%;
+  padding: 0.5em 0 0 0;
+  clear: left;
+}
+
+.container3 {
+ width: 35%;
+ float: left;
+ padding: 0.5em 0 0 0;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+}
+
+.container3 h5 {
+ text-align: left;
+}
+
+.container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+    float: left;
+    padding: .1em 0 0 .3em;
+    }
  }
 
 

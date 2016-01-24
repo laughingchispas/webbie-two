@@ -205,35 +205,35 @@ h5 {
   padding: 20px 0 20px 0;
 }
 
-.footerlogo {
+.footer-logo {
     width: 40px;
     float: left;
     padding: 8px 0 0 7px;
 }
 
-.footerlogo img {
+.footer-logo img {
     padding: 4px;
     background-color: white;
     border-radius: 14px;
 }
 
-.titleFooter {
+.title-footer {
     float: left;
     }
 
-.titleFooter h2 {
+.title-footer h2 {
     text-align: left;
     font-size: 1.2em;
     padding: 12px 0 0 10px;
     }
 
-.container2 {
+.content-footer {
   width: 100%;
   float: left;
   padding: 2px 0 0 50px;
 }
 
-.container2 h5 {
+.content-footer h5 {
  text-align: left;
  line-height: 1.5;
  font-size: .82em;
@@ -253,8 +253,20 @@ h5 {
 
 
 /******************NAVIGATION******************/
+header {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+}
 
 #nav {
+    width: 100%;
     padding: 0.55em 0 .75em 0;
     background-color: rgba(102, 153, 204);
     }
@@ -321,7 +333,6 @@ body {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;
-
 }
 
 /* Show <nav> on-screen / drop-down menu */
@@ -624,6 +635,7 @@ box-shadow:8px 8px 8px 2px black;
     	font-size: 1.382em; /* 1.3 x 1.063*/
     	line-height: 1.176;
     		}
+}
 
 @media only screen and (min-width: 430px) {
     h1 {
@@ -678,6 +690,9 @@ box-shadow:8px 8px 8px 2px black;
         color: black;
     }
 
+    #nav nav{
+    float: right;
+    }
   /*     1. Remove padding from one-column layout style.   */
     #nav {
         padding: 0;
@@ -714,6 +729,7 @@ box-shadow:8px 8px 8px 2px black;
 
 .scrolling-bg.cd-color-2 {
     height: 8.5em;
+}
 }
 
 @media only screen and (min-width: 900px) {
@@ -754,13 +770,13 @@ box-shadow:8px 8px 8px 2px black;
     height: 10.5em;
 }
 
-.footerlogo {
+.footer-logo {
     width: 50%;
     float: right;
     position: relative
 }
 
-.footerlogo img {
+.footer-logo img {
     position: absolute;
     top: -0.3em;
     left: 2em;
@@ -778,7 +794,7 @@ box-shadow:8px 8px 8px 2px black;
     padding: 0.2em 0 0 0;
     }
 
-.container2 {
+.content-footer {
   width: 15%;
   padding: 0.5em 0 0 0;
   clear: left;

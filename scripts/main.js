@@ -7,3 +7,6 @@
  * 3. Display to insert the result in a comment after the selection. (Cmd-L)
  */
 
+(function(){
+
+})();

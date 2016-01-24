@@ -1,4 +1,3 @@
-
 /********************************************
 	Tag Resets
 ********************************************/
@@ -54,157 +53,151 @@ html {
 }
 
 html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a {
-  color: #b4d7a8;
-  text-decoration: none;
+	color: #b4d7a8;
+	text-decoration: none;
 }
 
 /* ----------FONTS----------------*/
 
 @font-face {
-    	font-family: 'AnudiRegular';
-    	src: url('fonts/Anudi.eot');
-    	src: local('Anudi Regular'), local('Anudi'),url('fonts/Anudi.ttf') format('truetype');
+	font-family: 'AnudiRegular';
+	src: url('fonts/Anudi.eot');
+	src: local('Anudi Regular'), local('Anudi'), url('fonts/Anudi.ttf') format('truetype');
 }
 
 @font-face {
-    	font-family: 'Cinzel-Regular';
-    	src: url('fonts/cinzel/Cinzel-Regular.eot');
-    	src: local('Cinzel-Regular'), local('cinzel'),url('fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
+	font-family: 'Cinzel-Regular';
+	src: url('fonts/cinzel/Cinzel-Regular.eot');
+	src: local('Cinzel-Regular'), local('cinzel'), url('fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    	font-family: 'CarbonType';
-    	src: url('fonts/CarbonType/carbontype.eot');
-    	src: local('CarbonType'), local('CarbonType'),url('fonts/CarbonType/carbontype.ttf') format('truetype');
+	font-family: 'CarbonType';
+	src: url('fonts/CarbonType/carbontype.eot');
+	src: local('CarbonType'), local('CarbonType'), url('fonts/CarbonType/carbontype.ttf') format('truetype');
 }
 
 @font-face {
-    	font-family: 'Brushstroke';
-    	src: url('fonts/Brushstroke/BRUSHSTROKE.eot');
-    	src: local('Brushstroke'), local('CarbonType'),url('fonts/Brushstroke/BRUSHSTROKE.ttf') format('truetype');
+	font-family: 'Brushstroke';
+	src: url('fonts/Brushstroke/BRUSHSTROKE.eot');
+	src: local('Brushstroke'), local('CarbonType'), url('fonts/Brushstroke/BRUSHSTROKE.ttf') format('truetype');
 }
 
 @font-face {
-    	font-family: 'Boycott';
-    	src: url('fonts/Boycott/BOYCOTT.eot');
-    	src: local('Boycott'), local('Boycott'),url('fonts/Boycott/BOYCOTT.ttf') format('truetype');
+	font-family: 'Boycott';
+	src: url('fonts/Boycott/BOYCOTT.eot');
+	src: local('Boycott'), local('Boycott'), url('fonts/Boycott/BOYCOTT.ttf') format('truetype');
 }
 
 body, html {
-  /* important */
-  height: 100%;
+	/* important */
+	height: 100%;
 }
 
 html {
-    font-size: 100%;
-    line-height:1;
-    }
+	font-size: 100%;
+	line-height: 1;
+}
 
 body {
-    font-family: 'Cinzel-Regular', Arial, Geneva,sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	font-family: 'Cinzel-Regular', Arial, Geneva, sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
-
-
 
 h1, h2 {
-    font-family: 'CarbonType', Arial, sans-serif;
+	font-family: 'CarbonType', Arial, sans-serif;
 }
 
-
-h3   {font-family: 'CarbonType', Arial, sans-serif;
+h3 {
+	font-family: 'CarbonType', Arial, sans-serif;
 }
 
 .name {
-        float: left;
-        font-family: 'CarbonType', Arial, sans-serif;
-        color: black;
-        padding: 0 0 0 10px;
+	float: left;
+	font-family: 'CarbonType', Arial, sans-serif;
+	color: black;
+	padding: 0 0 0 10px;
 }
 
-.name:hover{
-    color: black;
+.name:hover {
+	color: black;
 }
-
 
 p {
-		font-size: 1.063em; /* 17px / 16 = 1.063em */
-		line-height: 1.223; /* 1.3 (golden number) / 1.063 = 1.223 */
-		margin: .612em 0;
-		text-align: right;
-			}
+	font-size: 1.063em; /* 17px / 16 = 1.063em */
+	line-height: 1.223; /* 1.3 (golden number) / 1.063 = 1.223 */
+	margin: .612em 0;
+	text-align: right;
+}
 
-h2,h3,h4,h6 {
-	    font-weight: 100;
-	    }
+h2, h3, h4, h6 {
+	font-weight: 100;
+}
 
 h1, h2 {
-    color: rgb(255, 102, 102);
+	color: rgb(255, 102, 102);
 }
+
 h1 {
 	font-size: 1.6em;
-    line-height: 1.223;
-    text-align: center;
-    font-weight: 500;
-		}
+	line-height: 1.223;
+	text-align: center;
+	font-weight: 500;
+}
 
-h2  {
+h2 {
 	font-size: 2.126em;
 	line-height: 1.223;
-		    }
+}
 
 h3 {
 	font-size: 1.382em; /* 1.3 x 1.063*/
 	line-height: 1.176;
-		}
+}
 
 h6 {
 	font-size: 1.25em; /* 1.3 x 1.063*/
 	line-height: 1.176;
-		}
+}
 
 h4 {
 	font-size: 1.063em; /* 17px / 16 = 1.063em */
-    line-height: 1.223;
+	line-height: 1.223;
 	text-align: center;
 	font-family: 'Cinzel-Regular', Arial, sans-serif;
-		}
+}
 
 h5 {
-    font-size: 0.9em;
-    line-height 1.223;
-    text-align: right;
-    font-weight: 500;
-    }
-
-.containertop {
-     border-style: solid;
-     border-width: 1px 0 1px 0;
-     border-color: black;
-     width: 100%;
-     margin: 0 auto;
+	font-size: 0.9em;
+	line-height: 1.223;
+	text-align: right;
+	font-weight: 500;
 }
 
-.container1 {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 20px 0 20px 0;
+.content-title {
+	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: auto;
+	max-width: 768px;
+	padding: 20px 0 20px 0;
+	margin: 20px auto;
+	border: 1px solid #000;
+	border-left: none;
+	border-right: none;
 }
 
+<<<<<<< HEAD
 .footer-logo {
     width: 40px;
     float: left;
@@ -237,20 +230,53 @@ h5 {
  text-align: left;
  line-height: 1.5;
  font-size: .82em;
+=======
+.footerlogo {
+	width: 40px;
+	float: left;
+	padding: 8px 0 0 7px;
+}
+
+.footerlogo img {
+	padding: 4px;
+	background-color: white;
+	border-radius: 14px;
+}
+
+.titleFooter {
+	float: left;
+}
+
+.titleFooter h2 {
+	text-align: left;
+	font-size: 1.2em;
+	padding: 12px 0 0 10px;
+}
+
+.container2 {
+	width: 100%;
+	float: left;
+	padding: 2px 0 0 50px;
+}
+
+.container2 h5 {
+	text-align: left;
+	line-height: 1.5;
+	font-size: .82em;
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
 }
 
 .container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
+	/* clearfix */
+	content: '';
+	display: table;
+	clear: both;
 }
 
 .logo {
-    float: left;
-    padding: .1em 0 0 .3em;
-    }
-
+	float: left;
+	padding: .1em 0 0 .3em;
+}
 
 /******************NAVIGATION******************/
 header {
@@ -265,6 +291,7 @@ nav {
     width: 100%;
 }
 
+<<<<<<< HEAD
 #nav {
     width: 100%;
     padding: 0.55em 0 .75em 0;
@@ -276,54 +303,73 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+=======
+#site-navigation {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	padding: 0.55em 0 .75em 0;
+	background-color: rgba(102, 153, 204, .9);
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
 }
 
-
-#nav ul {
-    list-style: none;
-    padding: 0;
-    border-bottom: 1px solid #eee;
-    margin: .55em 0 .2em;
+#site-navigation h3 {
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-#nav li {
-   border-top: 1px solid #eee;
+#site-navigation ul {
+	list-style: none;
+	padding: 0;
+	border-bottom: 1px solid #eee;
+	margin: .55em 0 .2em;
 }
 
-#nav a {
-   display: block;
-   font-size: 1.063em;
-   color: #333;
-   text-decoration: none;
-   padding: .975em 1.3em;
+#site-navigation li {
+	border-top: 1px solid #eee;
 }
 
-#nav a:hover {
-   background: #f8f8f8;
+#site-navigation a {
+	display: block;
+	font-size: 1.063em;
+	color: #333;
+	text-decoration: none;
+	padding: .975em 1.3em;
+}
+
+#site-navigation a:hover {
+	background: #f8f8f8;
 }
 
 /* Hide <nav> off-screen http://37signals.com/svn/posts/3126-another-9999px ] */
 
-#nav nav {
-    height: 0;
-    overflow: hidden;
+#site-navigation nav {
+	height: 0;
+	overflow: hidden;
 }
 
 body {
-    -webkit-animation: bugfix infinite 1s;
+	-webkit-animation: bugfix infinite 1s;
 }
 
 @-webkit-keyframes bugfix {
-    from {padding: 0;}
-    to {padding: 0;}
+	from {
+		padding: 0;
+	}
+	to {
+		padding: 0;
+	}
 }
 
-#nav input[type=checkbox] {
-    position: absolute;
-    top: -999em;
-    left: -999em;
+#site-navigation input[type=checkbox] {
+	position: absolute;
+	top: -999em;
+	left: -999em;
 }
 
+<<<<<<< HEAD
 #nav label {
     display: block;
     background: url("img/icon-menu.png") no-repeat right center;
@@ -333,232 +379,234 @@ body {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;
+=======
+#site-navigation label {
+	display: block;
+	background: url("img/icon-menu.png") no-repeat right center;
+	text-indent: -999em;
+	cursor: pointer;
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
+
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
 }
 
 /* Show <nav> on-screen / drop-down menu */
 
-#nav input[type=checkbox]:checked ~ nav {
-    height: auto;
-    overflow: hidden;
+#site-navigation input[type=checkbox]:checked ~ nav {
+	height: auto;
+	overflow: hidden;
 }
 
-.group img, .secondset img{
-    width: 300px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    }
-.group{
-    padding: 0 0 30px 0;
+.group img, .secondset img {
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
 }
-.imagecontainersmall img{
-box-shadow:8px 8px 8px 2px black;
+
+.group {
+	padding: 0 0 30px 0;
+}
+
+.imagecontainersmall img {
+	box-shadow: 8px 8px 8px 2px black;
 }
 
 .secondset {
-    padding: 30px 0 30px 0;
+	padding: 30px 0 30px 0;
 
-    }
+}
 
 /* setup for hovers */
 .imagecontainersmall {
-    position:relative;
-    width: 300px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    padding: 20px 0 0;
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 20px 0 0;
 }
 
 .visible1 {
-    position: absolute;
-    z-index: 20;
-    bottom: 0px;
-    left: 0px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: block;
+	position: absolute;
+	z-index: 20;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: block;
 }
 
-
 .visible2 {
-    position: absolute;
-    z-index: 30;
-    left: 0px;
-    width: 300px;
-    height: 300px;
-    display: block;
-    padding: 10px 0 0 0;
+	position: absolute;
+	z-index: 30;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+	display: block;
+	padding: 10px 0 0 0;
 }
 
 .headerbox, .underheader, .mainbox, .underbox {
-    width: 280px;
-    margin: 0 10px 5px 10px;
-    padding: 0 5px 0 5px;
-}
-.headerbox h3{
-    text-align: left;
-    font-color: black;
+	width: 280px;
+	margin: 0 10px 5px 10px;
+	padding: 0 5px 0 5px;
 }
 
-.mainbox h3{
-    text-align: left;
-    color: transparent;
+.headerbox h3 {
+	text-align: left;
+	font-color: black;
+}
+
+.mainbox h3 {
+	text-align: left;
+	color: transparent;
 }
 
 .underheader p {
-    text-align: left;
-    font-size: .9em;
-    border-style: solid;
-    border-width: 1px 0 0 0;
-    line-height: 1.2 em;
-    padding: 10px 0 0 0;
+	text-align: left;
+	font-size: .9em;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
 }
 
-.underbox p{
-    text-align: left;
-    font-size: .9em;
-    border-style: solid;
-    border-width: 1px 0 0 0;
-    line-height: 1.2 em;
-    padding: 10px 0 0 0;
-    color: transparent;
+.underbox p {
+	text-align: left;
+	font-size: .9em;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
+	color: transparent;
 }
 
-.visible2:hover + .visible1{
-    z-index: -1;
+.visible2:hover + .visible1 {
+	z-index: -1;
 }
 
-.visible2:hover{
-    background-color: rgba(255, 255, 255, 0.7);
+.visible2:hover {
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
-.visible2:hover p{
-    color: black;
+.visible2:hover p {
+	color: black;
 }
 
-.visible2:hover h3{
-    color: rgb(255, 102, 102);
+.visible2:hover h3 {
+	color: rgb(255, 102, 102);
 }
 
 .bottompicscon {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-    box-shadow:8px 8px 8px 2px black;
+	position: relative;
+	width: 300px;
+	margin: 0 auto;
+	box-shadow: 8px 8px 8px 2px black;
 }
 
 .leftpic {
-    z-index: 50;
-    position: relative;
-    width: 100%;
+	z-index: 50;
+	position: relative;
+	width: 100%;
 }
 
 .leftunderpic {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 40;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 40;
 }
 
 .leftpic:hover {
-    opacity: 0;
+	opacity: 0;
 }
 
 .piccover {
-    position: absolute;
-    width: 300px;
-    top: 0;
-    left: 0;
-    margin: 0 15px 0 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0 15px 0 15px;
-    height: 200px;
-    width: 100%;
+	position: absolute;
+	width: 300px;
+	top: 0;
+	left: 0;
+	margin: 0 15px 0 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0 15px 0 15px;
+	height: 200px;
+	width: 100%;
 }
 
-.piccover h1{
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: black;
+.piccover h1 {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: black;
 }
 
-.piccover p{
-    text-align: left;
-    font-size: .9em;
+.piccover p {
+	text-align: left;
+	font-size: .9em;
 }
 
 .whoiam {
-    margin: 0 auto;
-    padding: 40px 0 0 0;
-    width: 200px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+	width: 200px;
 }
+
 .whoiam h1 {
- border-style: solid;
- border-width: 1px 0 1px 0;
- border-color: black;
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	border-color: black;
 }
 
-
-                                /***contact page****/
+/***contact page****/
 .blurcontainer {
-    width: 100%;
-    background-color: black;
+	width: 100%;
+	background-color: black;
 }
-
-
 
 /******************************* MAIN CONTENT *********************************************/
 
 .main-content {
-  /* you need to assign a min-height to the main content so that the children can inherit it*/
-  height: 100%;
-  position: relative;
-  z-index: 1;
+	/* you need to assign a min-height to the main content so that the children can inherit it*/
+	height: 100%;
+	position: relative;
+	z-index: 1;
 }
-
 
 /******************* FIXED BGs *************************/
 
 .fixed-bg {
-  position: relative;
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
+	position: relative;
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1;
 }
 
-
 .fixed-bg {
-    background-attachment: fixed;
-  }
+	background-attachment: fixed;
+}
 
 .fixed-bg.cd-bg-1 {
-  background-image: url("ren.woman.jpg");
+	background-image: url("ren.woman.jpg");
 }
 
 .fixed-bg.cd-bg-2 {
-  background-image: url("img/concrete2.jpg");
-}
-
-}
-@media only screen and (min-width: 1170px) {
-  .fixed-bg {
-    background-attachment: fixed;
-  }
-
+	background-image: url("img/concrete2.jpg");
 }
 
 .scrolling-bg {
-  position: relative;
-  box-shadow:8px 0 8px 8px black;;
-  z-index: 2;
+	position: relative;
+	z-index: 2;
+	padding:20px;
+	box-shadow: 8px 0 8px 8px black;
 }
-
 
 /*
 .crolling-bg.cd-color-1 {
@@ -568,14 +616,14 @@ box-shadow:8px 8px 8px 2px black;
 */
 
 .scrolling-bg.cd-color-1 {
-  background-image: url("img/concrete2.jpg");
-  color: #3d3536;
+	background-image: url("img/concrete2.jpg");
+	color: #3d3536;
 }
 
 .scrolling-bg.cd-color-2 {
-  background-color: rgb(102, 153, 204);
-  color: #3d3536;
-  height: 6.0em;
+	background-color: rgb(102, 153, 204);
+	color: #3d3536;
+	height: 6.0em;
 }
 
 /*
@@ -587,17 +635,17 @@ box-shadow:8px 8px 8px 2px black;
 
 /** IE support */
 .ie .img {
-    *behavior: url("http://absolute-path.com/js/boxsizing.htc");
+	*behavior: url("http://absolute-path.com/js/boxsizing.htc");
 }
 
 /* blurring property */
 
-
 /*CONTACT PAGE STYLES*/
 
-.imgcontact img{
-    width: 200px;
-    border-radius: 100px;}
+.imgcontact img {
+	width: 200px;
+	border-radius: 100px;
+}
 
 .imgcontact img {
 	-webkit-filter: blur(4px);
@@ -605,74 +653,67 @@ box-shadow:8px 8px 8px 2px black;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+
 .imgcontact:hover img {
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
 }
 
 .imgconact {
-    float: left;
+	float: left;
 }
-.blurcontainer {
-    padding: 20px 50px 0 50px;}
 
-.blurcontainercontact   {
-    background-color: pink;
-    width: 200px;
+.blurcontainer {
+	padding: 20px 50px 0 50px;
+}
+
+.blurcontainercontact {
+	background-color: pink;
+	width: 200px;
 }
 
 .contactInfo {
-    background-color: red;
-    width: 250px;
-    }
+	background-color: red;
+	width: 250px;
+}
 
 /* ******************************************
     Media Queries
 ****************************************** */
 
 @media only screen and (min-width: 345px) {
+<<<<<<< HEAD
     h6 {
     	font-size: 1.382em; /* 1.3 x 1.063*/
     	line-height: 1.176;
     		}
+=======
+	h6 {
+		font-size: 1.382em; /* 1.3 x 1.063*/
+		line-height: 1.176;
+	}
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
 }
 
 @media only screen and (min-width: 430px) {
-    h1 {
-        font-size: 2.126em;
-        line-height: 1.223;
-    }
-     .group img, .secondset img{
-            width: 400px;
-            max-width: 100%;
-            display: block;
-            margin: 0 auto;
-      }
+	h1 {
+		font-size: 2.126em;
+		line-height: 1.223;
+	}
 
-     .secondset {
-            padding: 15px 0 50px 0;
-      }
+	.group img, .secondset img {
+		width: 400px;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.secondset {
+		padding: 15px 0 50px 0;
+	}
 }
 
-.scrolling-bg.cd-color-2 {
-    height: 7.5em;
-}
-
-@media only screen and (min-width: 530px) {
-    .group img, .secondset img{
-        width: 450px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        }
-    .group img{
-        padding: 20px;
-    }
-    .secondset {
-        padding: 20px 0 70px 0;
-    }
-}
-
+<<<<<<< HEAD
 @media only screen and (min-width: 720px) {
 
     .logo {
@@ -727,49 +768,22 @@ box-shadow:8px 8px 8px 2px black;
         padding: .975em .2em;
         }
 
+=======
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
 .scrolling-bg.cd-color-2 {
-    height: 8.5em;
+	height: 7.5em;
 }
 }
 
-@media only screen and (min-width: 900px) {
-  .scrolling-bg {
-    padding: 20px 0 0 0;
-    }
+@media only screen and (min-width: 530px) {
+	.group img, .secondset img {
+		width: 450px;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
 
-.imagecontainer img{
-     width: 300px;
-     float: left;
-     padding: 0;
-     margin: 0;
-  }
-
-.imagecontainer {
-    width: 900px;
-    margin: 0 auto;
-    position: relative;
-    }
-
-.secondset {
-    padding: 50px 0 500px 0;
-    clear: both;
-    width: 900px;
-    margin: 0 auto;
-    }
-
-#secondset img {
-    width: 450px;
-    float: left;
-}
-
-#nav a {
-      font-size: 1.1em;
-      padding: .975em .8em;}
-
-.scrolling-bg.cd-color-2 {
-    height: 10.5em;
-}
-
+<<<<<<< HEAD
 .footer-logo {
     width: 50%;
     float: right;
@@ -799,30 +813,177 @@ box-shadow:8px 8px 8px 2px black;
   padding: 0.5em 0 0 0;
   clear: left;
 }
+=======
+	.group img {
+		padding: 20px;
+	}
 
-.container3 {
- width: 35%;
- float: left;
- padding: 0.5em 0 0 0;
-  border-style: solid;
-  border-width: 0 1px 0 0;
+	.secondset {
+		padding: 20px 0 70px 0;
+	}
 }
 
-.container3 h5 {
- text-align: left;
+@media only screen and (min-width: 720px) {
+>>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
+
+	.logo {
+		padding: .55em 0 0 .3em
+	}
+
+	.name {
+		float: left;
+		font-family: 'CarbonType', Arial, sans-serif;
+		color: transparent;
+		padding: 0 0 0 10px;
+	}
+
+	.name:hover {
+		color: black;
+	}
+
+	/*     1. Remove padding from one-column layout style.   */
+	#site-navigation {
+		padding: 0;
+	}
+
+	/*     2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
+	#site-navigation h3 {
+		margin: .39em 1.3em 0 0;
+	}
+
+	/*     3. Remove <label> element.     */
+	#site-navigation label {
+		display: none;
+	}
+
+	/*    4. Show <nav> on-screen.    */
+	#site-navigation nav {
+		float: right;
+		height: auto;
+		overflow: visible;
+	}
+
+	/*     5. Remove border and margin from one-column layout style.   */
+	#site-navigation ul {
+		border: 0;
+		margin: 0;
+	}
+
+	/*    6. Display <li> as inline for horizontal menu layout.    7. Remove border.     */
+	#site-navigation li {
+		display: inline;
+		border: 0;
+	}
+
+	/*     8. Display <a> from block to inline-block to remain inline for horizontal menu layout.     */
+	#site-navigation a {
+		display: inline-block;
+		font-size: .93em;
+		padding: .975em .2em;
+	}
+
+	.scrolling-bg.cd-color-2 {
+		height: 8.5em;
+	}
 }
 
-.container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
+@media only screen and (min-width: 900px) {
+	.scrolling-bg {
+		padding: 20px 0 0 0;
+	}
+
+	.imagecontainer img {
+		width: 300px;
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	.imagecontainer {
+		width: 900px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.secondset {
+		padding: 50px 0 500px 0;
+		clear: both;
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	#secondset img {
+		width: 450px;
+		float: left;
+	}
+
+	#site-navigation a {
+		font-size: 1.1em;
+		padding: .975em .8em;
+	}
+
+	.scrolling-bg.cd-color-2 {
+		height: 10.5em;
+	}
+
+	.footerlogo {
+		width: 50%;
+		float: right;
+		position: relative
+	}
+
+	.footerlogo img {
+		position: absolute;
+		top: -0.3em;
+		left: 2em;
+	}
+
+	.titleFooter {
+		width: 50%;
+		border-style: solid;
+		border-width: 0 1px 0 0;
+		clear: left;
+	}
+
+	.titleFooter h2 {
+		text-align: center;
+		padding: 0.2em 0 0 0;
+	}
+
+	.container2 {
+		width: 15%;
+		padding: 0.5em 0 0 0;
+		clear: left;
+	}
+
+	.container3 {
+		width: 35%;
+		float: left;
+		padding: 0.5em 0 0 0;
+		border-style: solid;
+		border-width: 0 1px 0 0;
+	}
+
+	.container3 h5 {
+		text-align: left;
+	}
+
+	.container::after {
+		/* clearfix */
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.logo {
+		float: left;
+		padding: .1em 0 0 .3em;
+	}
 }
 
-.logo {
-    float: left;
-    padding: .1em 0 0 .3em;
-    }
- }
-
+@media only screen and (min-width: 1170px) {
+	.fixed-bg {
+		background-attachment: fixed;
+	}
+}
 

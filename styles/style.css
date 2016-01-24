@@ -260,7 +260,7 @@ figure,.box {
     width: 80%;
 }
 
-#nav,#masthead,#content,#colophon {
+#site-navigation,#masthead,#content,#colophon {
     margin: 0 5.5%;
 }
 #container-nav {
@@ -296,26 +296,26 @@ figure,.box {
             }
 
 
-#nav{
+#site-navigation {
    padding: 0.65em, 0:
 }
 
-           #nav h3{
+           #site-navigation h3{
               float: left;
               text-transform: uppercase;
               }
 
-            #nav ul {
+            #site-navigation ul {
                 list-style: none;
                 padding: 0;
                 border-bottom: 1px solid #eee;
                 margin: .65em 0 .39em;
             }
 
-            #nav li {
+            #site-navigation li {
                           border-top: 1px solid #eee;
                        }
-            #nav a {
+            #site-navigation a {
                   display: block;
                   font-size: 1.063em;
                   color: #333;
@@ -323,7 +323,7 @@ figure,.box {
                   padding: .975em 1.3em;
              }
 
-            #nav a:hover {
+            #site-navigation a:hover {
                 background: #f8f8f8;
             }
 
@@ -336,7 +336,7 @@ figure,.box {
     Advanced Checkbox Hack
 ****************************************** */
 
-#nav nav {
+#site-navigation nav {
     height: 0;
     overflow: hidden;
 }
@@ -349,7 +349,7 @@ body {
 1. Hide <nav> off-screen / -9999px/-999em technique works best.
 */
 
-#nav input[type=checkbox] {
+#site-navigation input[type=checkbox] {
     position: absolute;
     top: -999em;
     left: -999em;
@@ -367,7 +367,7 @@ body {
 **background image check box**
 */
 
-#nav label {
+#site-navigation label {
     display: block;
     background: url("img/icon-menu.png") no-repeat right center;
     text-indent: -999em;
@@ -382,7 +382,7 @@ body {
 6. Show <nav> on-screen / drop-down menu
 */
 
-#nav input[type=checkbox]:checked ~ nav {
+#site-navigation input[type=checkbox]:checked ~ nav {
     height: auto;
     overflow: hidden;
 }
@@ -522,7 +522,7 @@ textarea {
                 max-width: 40em;
                 }
 
-            #nav,#masthead,#content,#colophon {
+            #site-navigation,#masthead,#content,#colophon {
                             margin: 0 5.55;
                             }
 
@@ -550,35 +550,35 @@ textarea {
 
 
     /* Remove padding from one-column layout style. */
-    #nav {
+    #site-navigation {
         padding: 0;
     }
 
     /* Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
-    #nav h3 {
+    #site-navigation h3 {
         margin: .39em 1.3em 0 0;
     }
     /* Remove <label> element. */
-    #nav label {
+    #site-navigation label {
         display: none;
     }
     /* Show <nav> on-screen. */
-    #nav nav {
+    #site-navigation nav {
         height: auto;
         overflow: visible;
     }
     /* Display <li> as inline for horizontal menu layout and Remove border.*/
-    #nav li {
+    #site-navigation li {
         display: inline;
         border: 0;
         float: right;
     }
     /* Display <a> from block to inline-block to remain inline for horizontal menu layout. */
-    #nav a {
+    #site-navigation a {
         display: inline-block;
     }
 
-    #nav ul {
+    #site-navigation ul {
         border-bottom: none;
     }
 

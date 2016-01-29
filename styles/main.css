@@ -100,11 +100,7 @@ body {
 }
 
 
-h1, h2 {
-	font-family: 'CarbonType', Arial, sans-serif;
-}
-
-h3 {
+h1, h3, h4, h5 {
 	font-family: 'CarbonType', Arial, sans-serif;
 }
 
@@ -113,7 +109,9 @@ p {
 	line-height: 1.223; /* 1.3 (golden number) / 1.063 = 1.223 */
 	margin: .612em 0;
 	text-align: right;
+	font-family: 'Cinzel-Regular', Arial, sans-serif;
 }
+
 
 h2, h3, h4, h6 {
 	font-weight: 100;
@@ -133,6 +131,7 @@ h1 {
 h2 {
 	font-size: 2.126em;
 	line-height: 1.223;
+	font-family: 'Cinzel-Regular', Arial, sans-serif;
 }
 
 h3 {
@@ -140,16 +139,10 @@ h3 {
 	line-height: 1.176;
 }
 
-h6 {
-	font-size: 1.25em; /* 1.3 x 1.063*/
-	line-height: 1.176;
-}
-
 h4 {
 	font-size: 1.063em; /* 17px / 16 = 1.063em */
 	line-height: 1.223;
 	text-align: center;
-	font-family: 'Cinzel-Regular', Arial, sans-serif;
 }
 
 h5 {
@@ -216,10 +209,7 @@ h5 {
 */
 
 
-/* ********* navigation ************/
-
-
-/******************NAVIGATION******************/
+/******************************** NAVIGATION ********************************/
 
 header {
     position: absolute;
@@ -251,7 +241,7 @@ nav {
 	z-index: 2;
 	width: 100%;
 	padding: 0.55em 0 .75em 0;
-	background-color: red;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 #site-navigation h4 {
@@ -283,18 +273,13 @@ nav {
 #site-navigation a:hover {
 	background: #f8f8f8;
 }
-
-/* Hide <nav> off-screen http://37signals.com/svn/posts/3126-another-9999px ] */
-
 #site-navigation nav {
 	height: 0;
 	overflow: hidden;
 }
-
 body {
 	-webkit-animation: bugfix infinite 1s;
 }
-
 @-webkit-keyframes bugfix {
 	from {
 		padding: 0;
@@ -303,13 +288,11 @@ body {
 		padding: 0;
 	}
 }
-
 #site-navigation input[type=checkbox] {
 	position: absolute;
 	top: -999em;
 	left: -999em;
 }
-
 #site-navigation label {
 	display: block;
 	background: url("img/icon-menu.png") no-repeat right center;
@@ -320,11 +303,235 @@ body {
 	-ms-user-select: none; /* IE 10+ */
 	user-select: none;
 }
-
-/* Show <nav> on-screen / drop-down menu */
 #site-navigation input[type=checkbox]:checked ~ nav {
 	height: auto;
 	overflow: hidden;
+}
+
+
+/********************************* image styling ***********************************/
+
+/***************************** all images******************************************/
+
+.three-pic-container img, two-pic-container img{
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.three-pic-container img, two-pic-container img{
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+
+/***************************** three-pic-container ****************************************/
+.three-pic-container, .three-pic-container-version-two {
+	padding: 0 0 30px 0;
+	margin: 0 auto;
+}
+
+.image-container-small {
+	position: relative;
+    margin: 20px auto 20px auto;
+	border-radius: 5px;
+	width: 300px;
+}
+
+.image-container-small img {
+	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.8);
+	width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.hover-appear, .hover-appear-version-two {
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	display: block;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.hover-disappear, .hover-disappear-version-two {
+	width: 300px;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 15px;
+	border-radius: 5px;
+	left: 0;
+}
+
+
+.hover-disappear-version-two h3 {
+    color: black;}
+}
+
+
+/********** first-version *********/
+
+.hover-appear h3, .hover-appear-version-two h3 {
+	text-align: left;
+	color: transparent;
+}
+
+.hover-appear:hover + .hover-disappear {
+	z-index: -1;
+}
+.hover-appear:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.hover-appear p{
+	text-align: left;
+	font-size: .9em;
+	border-style: dotted;
+	border-width: 2px 0 0 0;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
+	color: transparent;
+}
+
+.hover-appear h3{
+    color: transparent;
+    }
+.hover-appear:hover p {
+	color: black;
+}
+.hover-appear:hover h3 {
+	color: rgb(255, 102, 102);
+}
+
+.hover-disappear {
+	bottom: 0;
+	left: 0;
+}
+
+.hover-disappear h3, p {
+	text-align: left;
+	color: black;
+}
+
+/********* version two *********/
+.hover-disappear-version-two {
+	top: 200px;
+	left: 0;
+	height: 100px;
+}
+
+.hover-disappear-version-two p{
+    border-style: dotted;
+    border-width: 2px 0 0 0;
+}
+
+.hover-appear-version-two:hover + .hover-disappear-version-two {
+	z-index: -1;
+}
+
+.hover-appear-version-two p{
+	text-align: left;
+	font-size: .9em;
+	border-style: dotted;
+	border-width: 2px 0 0 0;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
+	color: transparent;
+}
+
+.hover-appear-version-two:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hover-appear-version-two:hover p {
+	color: black;
+}
+
+.hover-appear-version-two:hover h3 {
+	color: rgb(255, 102, 102);
+}
+
+.text-explanation p{
+     font-family: times, arial, serif;
+     margin: 15px 0 0 0;
+     padding: 0 0 0 10px;
+     background-color: rgba(255, 255, 255, 0.9);
+     border-radius: 5px;
+     box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.8);
+     }
+
+/**** two pic container ***************/
+.two-pic-container {
+	position: relative;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
+ .pic-disappear img, .pic-underneath img, .pic-covered img {
+	width: 300px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pic-disappear, .pic-covered-text {
+    position: absolute;
+}
+
+.pic-disappear {
+    z-index: 50;
+}
+
+.pic-underneath {
+	z-index: 40;
+}
+
+.pic-disappear:hover {
+	opacity: 0;
+}
+
+.pic-covered-text {
+	position: absolute;
+	width: 300px;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 200px;
+	padding: 10px;
+}
+
+.pic-covered-text h1 {
+	border-style: doted;
+	border-width: 0 0 2px 0;
+	border-color: black;
+}
+
+.pic-covered-text p {
+	text-align: left;
+	font-size: .9em;
+}
+
+/* middle section */
+.whoiam {
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+	width: 200px;
+}
+
+.whoiam h1 {
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	border-color: black;
 }
 
 
@@ -334,11 +541,12 @@ body {
 	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: auto;
 	max-width: 768px;
-	padding: 20px 0 20px 0;
-	margin: 20px auto;
+	padding: 60px 0 20px 0;
+	margin: 0 auto;
 	border: 1px solid #000;
 	border-left: none;
 	border-right: none;
+	background-color: black;
 }
 
 
@@ -394,165 +602,6 @@ body {
 }
 
 
-/***** image styling *******/
-
-.three-pic-container img, .secondset img {
-	width: 300px;
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-	border-radius: 5px;
-}
-
-.three-pic-container {
-	padding: 0 0 30px 0;
-}
-
-.image-container-small img {
-	box-shadow: 8px 8px 8px 2px black;
-}
-
-
-/* setup for hovers */
-.image-container-small {
-	position: relative;
-	width: 300px;
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-	border-radius: 5px;
-	padding: 20px 0 0;
-}
-
-.hover-appear {
-	position: absolute;
-	z-index: 20;
-	bottom: 0px;
-	left: 0px;
-	width: 300px;
-	background-color: rgba(255, 255, 255, 0.7);
-	display: block;
-}
-
-.hover-appear {
-	position: absolute;
-	z-index: 30;
-	left: 0px;
-	width: 300px;
-	height: 300px;
-	display: block;
-	padding: 10px 0 0 0;
-}
-
-.hover-disappear, .underheader, .hover-appear {
-	width: 280px;
-	margin: 0 10px 5px 10px;
-	padding: 0 5px 0 5px;
-}
-hover-disappear h3 {
-	text-align: left;
-	font-color: black;
-}
-
-.hover-appear h3 {
-	text-align: left;
-	color: transparent;
-}
-
-.underheader p {
-	text-align: left;
-	font-size: .9em;
-	border-style: solid;
-	border-width: 1px 0 0 0;
-	line-height: 1.2em;
-	padding: 10px 0 0 0;
-}
-
-.hover-appear p {
-	text-align: left;
-	font-size: .9em;
-	border-style: solid;
-	border-width: 1px 0 0 0;
-	line-height: 1.2em;
-	padding: 10px 0 0 0;
-	color: transparent;
-}
-
-.hover-appear:hover + .hover-disappear {
-	z-index: -1;
-}
-
-.hover-appear:hover {
-	background-color: rgba(255, 255, 255, 0.7);
-}
-
-.hover-appear:hover p {
-	color: black;
-}
-
-.hover-appear:hover h3 {
-	color: rgb(255, 102, 102);
-}
-
-.bottompicscon {
-	position: relative;
-	width: 300px;
-	margin: 0 auto;
-	box-shadow: 8px 8px 8px 2px black;
-}
-
-.leftpic {
-	z-index: 50;
-	position: relative;
-	width: 100%;
-}
-
-.leftunderpic {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 40;
-}
-
-.leftpic:hover {
-	opacity: 0;
-}
-
-.piccover {
-	position: absolute;
-	width: 300px;
-	top: 0;
-	left: 0;
-	margin: 0 15px 0 0;
-	background-color: rgba(255, 255, 255, 0.7);
-	padding: 0 15px 0 15px;
-	height: 200px;
-	width: 100%;
-}
-
-.piccover h1 {
-	border-style: solid;
-	border-width: 0 0 1px 0;
-	border-color: black;
-}
-
-.piccover p {
-	text-align: left;
-	font-size: .9em;
-}
-
-.whoiam {
-	margin: 0 auto;
-	padding: 40px 0 0 0;
-	width: 200px;
-}
-
-.whoiam h1 {
-	border-style: solid;
-	border-width: 1px 0 1px 0;
-	border-color: black;
-}
 
 /***contact page****/
 
@@ -597,7 +646,7 @@ hover-disappear h3 {
 	filter: blur(0px);
 }
 
-.imgconact {
+.imgcontact {
 	float: left;
 }
 
@@ -621,7 +670,7 @@ hover-disappear h3 {
 
 @media only screen and (min-width: 345px) {
 
-	h6 {
+	h4 {
 		font-size: 1.382em; /* 1.3 x 1.063*/
 		line-height: 1.176;
 	}
@@ -632,82 +681,111 @@ hover-disappear h3 {
 		font-size: 2.126em;
 		line-height: 1.223;
 	}
-
-	.three-pic-container img, .secondset img {
-		width: 400px;
-		max-width: 100%;
-		display: block;
-		margin: 0 auto;
-	}
-
-	.secondset {
-		padding: 15px 0 50px 0;
-	}
+                /*i mage style */
+.three-pic-container, two-pic-container{
+	max-width: 400px;
 }
 
-@media only screen and (min-width: 720px) {
-
-    .logo {
-    padding: .55em 0 0 .3em
-    }
-
-    .name {
-            float: left;
-            font-family: 'CarbonType', Arial, sans-serif;
-            color: transparent;
-            padding: 0 0 0 10px;
-    }
-
-    .name:hover{
-        color: black;
-    }
-
-    #nav nav{
-    float: right;
-    }
-  /*     1. Remove padding from one-column layout style.   */
-    #nav {
-        padding: 0;
-    }
-    /*     2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
-    #nav h3 {
-         margin: .39em 1.3em 0 0;
-    }
-    /*     3. Remove <label> element.     */
-    #nav label {
-        display: none;
-    }
-    /*    4. Show <nav> on-screen.    */
-    #nav nav {
-        height: auto;
-        overflow: visible;
-    }
-    /*     5. Remove border and margin from one-column layout style.   */
-    #nav ul {
-        border: 0;
-        margin: 0;
-    }
-    /*    6. Display <li> as inline for horizontal menu layout.    7. Remove border.     */
-    #nav li {
-        display: inline;
-        border: 0;
-    }
-    /*     8. Display <a> from block to inline-block to remain inline for horizontal menu layout.     */
-    #nav a {
-        display: inline-block;
-        font-size: .93em;
-        padding: .975em .2em;
-        }
-
-=======
->>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
-.scrolling-bg.cd-color-2 {
-	height: 7.5em;
+.three-pic-container img, two-pic-container img{
+    max-width: 400px;
 }
+
+.three-pic-container, .three-pic-container-version-two {
+	padding: 0 0 30px 0;
+}
+
+.image-container-small {
+    margin: 20px auto 20px auto;
+	width: 400px;
+}
+
+.image-container-small img {
+	width: 400px;
+}
+
+.hover-appear, .hover-appear-version-two {
+	width: 400px;
+	height: 400px;
+	padding: 10px 15px;
+}
+
+.hover-disappear, .hover-disappear-version-two {
+	width: 400px;
+	padding: 15px;
+	left: 0;
+}
+
+.hover-appear p{
+	font-size: .9em;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
+}
+
+.hover-disappear-version-two {
+	top: 300px;
+	height: 100px;
+}
+
+.hover-appear-version-two p{
+	font-size: .9em;
+	line-height: 1.2em;
+}
+
+.text-explanation p{
+     margin: 15px 0 0 0;
+     padding: 0 0 0 10px;
+     }
+
+.two-pic-container {
+	position: relative;
+	width: 400px;
+}
+
+.pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
+ .pic-disappear img, .pic-underneath img, .pic-covered img {
+	width: 400px;
+	height: 266.66px;
+}
+
+.pic-covered-text {
+	width: 400px;
+	top: 266.666px;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 266.666px;
+	padding: 10px;
+}
+
+.pic-covered-text h1 {
+	border-style: doted;
+	border-width: 0 0 2px 0;
+	border-color: black;
+}
+
+.pic-covered-text p {
+	text-align: left;
+	font-size: .9em;
+}
+
+/* middle section */
+.whoiam {
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+	width: 200px;
+}
+
+.whoiam h1 {
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	border-color: black;
+}
+
+
+
 }
 
 @media only screen and (min-width: 530px) {
-	.three-pic-container img, .secondset img {
+	.three-pic-container img, .two-pic-container img {
 		width: 450px;
 		max-width: 100%;
 		display: block;
@@ -726,14 +804,14 @@ hover-disappear h3 {
     left: 2em;
 }
 
-.titleFooter {
+.title-Footer {
     width: 50%;
     border-style: solid;
     border-width: 0 1px 0 0;
     clear: left;
     }
 
-.titleFooter h2 {
+.title-Footer h2 {
     text-align: center;
     padding: 0.2em 0 0 0;
     }
@@ -743,18 +821,16 @@ hover-disappear h3 {
   padding: 0.5em 0 0 0;
   clear: left;
 }
-=======
-	.three-pic-container img {
-		padding: 20px;
-	}
 
-	.secondset {
-		padding: 20px 0 70px 0;
-	}
 }
 
 @media only screen and (min-width: 720px) {
->>>>>>> d9fde39d47ca8d7c18f96b70dc125813b7dede91
+
+    .bar    {
+        float: right;
+        display: inline;
+        padding: 0;
+        }
 
 	.logo {
 		padding: .55em 0 0 .3em
@@ -765,8 +841,8 @@ hover-disappear h3 {
 		font-family: 'CarbonType', Arial, sans-serif;
 		color: transparent;
 		padding: 0 0 0 10px;
+		padding: 0;
 	}
-
 	.name:hover {
 		color: black;
 	}
@@ -774,26 +850,22 @@ hover-disappear h3 {
 	/*     1. Remove padding from one-column layout style.   */
 	#site-navigation {
 		padding: 0;
+		margin: 0;
 	}
-
-	/*     2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content.  */
-	#site-navigation h3 {
+	#site-navigation h4 {
 		margin: .39em 1.3em 0 0;
 	}
 
-	/*     3. Remove <label> element.     */
 	#site-navigation label {
 		display: none;
 	}
 
-	/*    4. Show <nav> on-screen.    */
 	#site-navigation nav {
 		float: right;
 		height: auto;
+		width: auto;
 		overflow: visible;
 	}
-
-	/*     5. Remove border and margin from one-column layout style.   */
 	#site-navigation ul {
 		border: 0;
 		margin: 0;
@@ -805,7 +877,6 @@ hover-disappear h3 {
 		border: 0;
 	}
 
-	/*     8. Display <a> from block to inline-block to remain inline for horizontal menu layout.     */
 	#site-navigation a {
 		display: inline-block;
 		font-size: .93em;
@@ -822,20 +893,20 @@ hover-disappear h3 {
 		padding: 20px 0 0 0;
 	}
 
-	.imagecontainer img {
+	.image-containers-small img {
 		width: 300px;
 		float: left;
 		padding: 0;
 		margin: 0;
 	}
 
-	.imagecontainer {
+	.image-container-small {
 		width: 900px;
 		margin: 0 auto;
 		position: relative;
 	}
 
-	.secondset {
+	.two-pic-container {
 		padding: 50px 0 500px 0;
 		clear: both;
 		width: 900px;
@@ -856,13 +927,13 @@ hover-disappear h3 {
 		height: 10.5em;
 	}
 
-	.footerlogo {
+	.footer-logo {
 		width: 50%;
 		float: right;
 		position: relative
 	}
 
-	.footerlogo img {
+	.footer-logo img {
 		position: absolute;
 		top: -0.3em;
 		left: 2em;

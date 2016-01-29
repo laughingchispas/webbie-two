@@ -171,7 +171,7 @@ h5 {
 }
 
 .fixed-bg.cd-bg-1 {
-	background-image: url("ren.woman.jpg");
+	background-image: url("ren.trial.jpg");
 }
 
 .fixed-bg.cd-bg-2 {
@@ -228,9 +228,6 @@ header {
 	font-family: 'CarbonType', Arial, sans-serif;
 	color: black;
 	padding: 0 0 0 10px;
-}
-.name:hover {
-	color: red;
 }
 
 nav {
@@ -314,14 +311,14 @@ body {
 /***************************** all images******************************************/
 
 .three-pic-container img, two-pic-container img{
-	max-width: 300px;
+	width: 300px;
 	display: block;
 	margin: 0 auto;
 	border-radius: 5px;
 }
 
 .three-pic-container img, two-pic-container img{
-    max-width: 300px;
+    width: 300px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -372,7 +369,6 @@ body {
 	left: 0;
 }
 
-
 .hover-disappear-version-two h3 {
     color: black;}
 }
@@ -380,9 +376,18 @@ body {
 
 /********** first-version *********/
 
-.hover-appear h3, .hover-appear-version-two h3 {
+.hover-appear h3 {
 	text-align: left;
 	color: transparent;
+	border-style: dotted;
+    border-width: 2px 0 0 0;
+}
+
+.hover-appear-version-two h3 {
+	text-align: left;
+	color: transparent;
+	border-style: dotted;
+    border-width: 2px 0 0 0;
 }
 
 .hover-appear:hover + .hover-disappear {
@@ -404,6 +409,7 @@ body {
 .hover-appear h3{
     color: transparent;
     }
+
 .hover-appear:hover p {
 	color: black;
 }
@@ -414,6 +420,11 @@ body {
 .hover-disappear {
 	bottom: 0;
 	left: 0;
+}
+
+.hover-disappear p {
+    border-style: dotted;
+    border-width: 2px 0 0 0;
 }
 
 .hover-disappear h3, p {
@@ -428,7 +439,7 @@ body {
 	height: 100px;
 }
 
-.hover-disappear-version-two p{
+.hover-disappear-version-two p {
     border-style: dotted;
     border-width: 2px 0 0 0;
 }
@@ -457,7 +468,9 @@ body {
 
 .hover-appear-version-two:hover h3 {
 	color: rgb(255, 102, 102);
+	border-color: transparent;
 }
+
 
 .text-explanation p{
      font-family: times, arial, serif;
@@ -510,8 +523,8 @@ body {
 	padding: 10px;
 }
 
-.pic-covered-text h1 {
-	border-style: doted;
+.pic-covered-text h3 {
+	border-style: dotted;
 	border-width: 0 0 2px 0;
 	border-color: black;
 }
@@ -540,7 +553,7 @@ body {
 .content-title {
 	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: auto;
-	max-width: 768px;
+	width: 100%;
 	padding: 60px 0 20px 0;
 	margin: 0 auto;
 	border: 1px solid #000;
@@ -670,167 +683,128 @@ body {
 
 @media only screen and (min-width: 345px) {
 
-	h4 {
-		font-size: 1.382em; /* 1.3 x 1.063*/
-		line-height: 1.176;
-	}
+    h4 {
+        font-size: 1.382em; /* 1.3 x 1.063*/
+        line-height: 1.176;
+    }
 
 
 @media only screen and (min-width: 430px) {
-	h1 {
-		font-size: 2.126em;
-		line-height: 1.223;
-	}
-                /*i mage style */
-.three-pic-container, two-pic-container{
-	max-width: 400px;
-}
-
-.three-pic-container img, two-pic-container img{
-    max-width: 400px;
-}
-
-.three-pic-container, .three-pic-container-version-two {
-	padding: 0 0 30px 0;
-}
-
-.image-container-small {
-    margin: 20px auto 20px auto;
-	width: 400px;
-}
-
-.image-container-small img {
-	width: 400px;
-}
-
-.hover-appear, .hover-appear-version-two {
-	width: 400px;
-	height: 400px;
-	padding: 10px 15px;
-}
-
-.hover-disappear, .hover-disappear-version-two {
-	width: 400px;
-	padding: 15px;
-	left: 0;
-}
-
-.hover-appear p{
-	font-size: .9em;
-	line-height: 1.2em;
-	padding: 10px 0 0 0;
-}
-
-.hover-disappear-version-two {
-	top: 300px;
-	height: 100px;
-}
-
-.hover-appear-version-two p{
-	font-size: .9em;
-	line-height: 1.2em;
-}
-
-.text-explanation p{
-     margin: 15px 0 0 0;
-     padding: 0 0 0 10px;
-     }
-
-.two-pic-container {
-	position: relative;
-	width: 400px;
-}
-
-.pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
- .pic-disappear img, .pic-underneath img, .pic-covered img {
-	width: 400px;
-	height: 266.66px;
-}
-
-.pic-covered-text {
-	width: 400px;
-	top: 266.666px;
-	left: 0;
-	background-color: rgba(255, 255, 255, 0.7);
-	height: 266.666px;
-	padding: 10px;
-}
-
-.pic-covered-text h1 {
-	border-style: doted;
-	border-width: 0 0 2px 0;
-	border-color: black;
-}
-
-.pic-covered-text p {
-	text-align: left;
-	font-size: .9em;
-}
-
-/* middle section */
-.whoiam {
-	margin: 0 auto;
-	padding: 15px 0 0 0;
-	width: 200px;
-}
-
-.whoiam h1 {
-	border-style: solid;
-	border-width: 1px 0 1px 0;
-	border-color: black;
-}
-
-
-
-}
-
-@media only screen and (min-width: 530px) {
-	.three-pic-container img, .two-pic-container img {
-		width: 450px;
-		max-width: 100%;
-		display: block;
-		margin: 0 auto;
-	}
-
-.footer-logo {
-    width: 50%;
-    float: right;
-    position: relative
-}
-
-.footer-logo img {
-    position: absolute;
-    top: -0.3em;
-    left: 2em;
-}
-
-.title-Footer {
-    width: 50%;
-    border-style: solid;
-    border-width: 0 1px 0 0;
-    clear: left;
+    h1 {
+        font-size: 2.126em;
+        line-height: 1.223;
+    }
+                    /*image styles */
+    .three-pic-container, two-pic-container{
+        width: 400px;
     }
 
-.title-Footer h2 {
-    text-align: center;
-    padding: 0.2em 0 0 0;
+    .three-pic-container img, two-pic-container img{
+        width: 400px;
     }
 
-.content-footer {
-  width: 15%;
-  padding: 0.5em 0 0 0;
-  clear: left;
-}
+    .three-pic-container, .three-pic-container-version-two {
+        padding: 0 0 30px 0;
+    }
+
+    .image-container-small {
+        margin: 20px auto 20px auto;
+        width: 400px;
+    }
+
+    .image-container-small img {
+        width: 400px;
+    }
+
+    .hover-appear, .hover-appear-version-two {
+        width: 400px;
+        height: 400px;
+        padding: 10px 15px;
+    }
+
+    .hover-disappear, .hover-disappear-version-two {
+        width: 400px;
+        padding: 15px;
+        left: 0;
+    }
+
+    .hover-appear p {
+        font-size: .9em;
+        line-height: 1.2em;
+        padding: 10px 0 0 0;
+    }
+
+    .hover-disappear-version-two {
+        top: 300px;
+        height: 100px;
+    }
+
+    .hover-appear-version-two p{
+        font-size: .9em;
+        line-height: 1.2em;
+    }
+
+    .text-explanation p{
+         margin: 15px 0 0 0;
+         padding: 0 0 0 10px;
+         }
+
+    .two-pic-container {
+        position: relative;
+        width: 400px;
+    }
+
+    .pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
+    .pic-disappear img, .pic-underneath img, .pic-covered img {
+        width: 400px;
+        height: 266.66px;
+    }
+
+    .pic-covered-text {
+        width: 400px;
+        top: 266.666px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 266.666px;
+        padding: 10px;
+    }
+
+    .pic-covered-text h3 {
+        border-style: doted;
+        border-width: 0 0 2px 0;
+        border-color: black;
+    }
+
+    .pic-covered-text p {
+        text-align: left;
+        font-size: .9em;
+    }
+
+    .whoiam {
+        margin: 0 auto;
+        padding: 15px 0 0 0;
+        width: 200px;
+    }
+
+    .whoiam h1 {
+        border-style: dotted;
+        border-width: 1px 0 1px 0;
+        border-color: black;
+    }
 
 }
 
 @media only screen and (min-width: 720px) {
+    .scrolling-bg cd-color-1, .fixed-bg cd-bg-2 {
+        padding: 0;
+        margin: 0;
+        }
 
     .bar    {
         float: right;
         display: inline;
         padding: 0;
-        }
+    }
 
 	.logo {
 		padding: .55em 0 0 .3em
@@ -839,19 +813,15 @@ body {
 	.name {
 		float: left;
 		font-family: 'CarbonType', Arial, sans-serif;
-		color: transparent;
-		padding: 0 0 0 10px;
-		padding: 0;
-	}
-	.name:hover {
 		color: black;
+		padding: 0 0 0 10px;
 	}
 
-	/*     1. Remove padding from one-column layout style.   */
 	#site-navigation {
 		padding: 0;
 		margin: 0;
 	}
+
 	#site-navigation h4 {
 		margin: .39em 1.3em 0 0;
 	}
@@ -871,7 +841,6 @@ body {
 		margin: 0;
 	}
 
-	/*    6. Display <li> as inline for horizontal menu layout.    7. Remove border.     */
 	#site-navigation li {
 		display: inline;
 		border: 0;
@@ -883,108 +852,443 @@ body {
 		padding: .975em .2em;
 	}
 
-	.scrolling-bg.cd-color-2 {
-		height: 8.5em;
-	}
+                                                   /*image styles */
+    .three-pic-container, .three-pic-container-version-two {
+        width: 690px;
+        height: 210px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .image-container-small {
+        width: 210px;
+        display: inline;
+        float: left;
+        background-color: purple;
+        margin: 10px;
+    }
+
+    .image-container-small img {
+        width: 210px;
+    }
+
+    .hover-appear, .hover-appear-version-two {
+        width: 210px;
+        height: 210px;
+        padding: 10px 15px;
+    }
+
+    .hover-disappear, .hover-disappear-version-two {
+        width: 210px;
+        padding: 15px;
+    }
+
+    .hover-appear p{
+        font-size: .9em;
+        line-height: 1.2em;
+        padding: 10px 0 0 0;
+    }
+
+    .hover-disappear-version-two {
+        top: 110px;
+        left: 0;
+        height: 100px;
+    }
+
+    .hover-appear-version-two p {
+        font-size: .9em;
+        line-height: 1.2em;
+    }
+
+    .text-explanation p {
+         margin: 15px 0 0 0;
+         padding: 0 0 0 10px;
+         }
+
+    .two-pic-container {
+        margin: 0 auto;
+        position: relative;
+        width: 690px;
+        height: 250px;
+        margin: 0 auto;
+        padding: 10px 15px;
+    }
+
+    .pic-disappear img, .pic-underneath img, .pic-covered img {
+        width: 330px;
+        height: 220px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pic-disappear, .pic-underneath, .pic-covered {
+        width: 330px;
+        height: 220px;
+        background: blue;
+        margin: 0;
+        padding: 0;
+        }
+
+    .pic-covered, .pic-covered-text {
+        position: absolute;
+        top: 10px;
+        left: 345px;
+        height: 220px;
+        width: 330px;
+        }
+
+
+    .pic-underneath {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        }
+
+    .pic-covered-text {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .pic-covered-text h3 {
+        border-style: dotted;
+        border-width: 0 0 2px 0;
+        border-color: black;
+    }
+
+    .pic-covered-text p {
+        text-align: left;
+        font-size: .9em;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+        .three-pic-container, .three-pic-container-version-two {
+            width: 790px;
+            height: 230px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .image-container-small {
+            width: 240px;
+            display: inline;
+            float: left;
+            background-color: purple;
+            margin: 10px;
+        }
+
+        .image-container-small img {
+            width: 240px;
+        }
+
+        .hover-appear, .hover-appear-version-two {
+            width: 240px;
+            height: 240px;
+            padding: 10px 15px;
+        }
+
+        .hover-disappear, .hover-disappear-version-two {
+            width: 240px;
+            padding: 15px;
+        }
+
+        .hover-appear p{
+            font-size: .9em;
+            line-height: 1.2em;
+            padding: 10px 0 0 0;
+        }
+
+        .hover-disappear-version-two {
+            top: 110px;
+            left: 0;
+            height: 100px;
+        }
+
+        .hover-appear-version-two p {
+            font-size: .9em;
+            line-height: 1.2em;
+        }
+
+        .text-explanation p {
+             margin: 15px 0 0 0;
+             padding: 0 0 0 10px;
+             }
+
+        .two-pic-container {
+                width: 790px;
+                height: 280px;
+                margin: 0 auto;
+                padding: 10px 15px;
+            }
+
+        .pic-disappear img, .pic-underneath img, .pic-covered img {
+            width: 385px;
+            height: 256.66px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pic-disappear, .pic-underneath, .pic-covered {
+            width: 385px;
+            height: 256.66px;
+            background: blue;
+            margin: 0;
+            padding: 0;
+            }
+
+        .pic-covered, .pic-covered-text {
+            position: absolute;
+            top: 10px;
+            left: 395px;
+            height: 256.66px;
+            width: 385px;
+            }
+
+
+        .pic-underneath {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            }
+
+        .pic-covered-text {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .pic-covered-text h3 {
+            border-style: dotted;
+            border-width: 0 0 2px 0;
+            border-color: black;
+        }
+
+        .pic-covered-text p {
+            text-align: left;
+            font-size: .9em;
+        }
 }
 
 @media only screen and (min-width: 900px) {
-	.scrolling-bg {
-		padding: 20px 0 0 0;
-	}
-
-	.image-containers-small img {
-		width: 300px;
-		float: left;
-		padding: 0;
-		margin: 0;
-	}
-
-	.image-container-small {
-		width: 900px;
-		margin: 0 auto;
-		position: relative;
-	}
-
-	.two-pic-container {
-		padding: 50px 0 500px 0;
-		clear: both;
-		width: 900px;
-		margin: 0 auto;
-	}
-
-	#secondset img {
-		width: 450px;
-		float: left;
-	}
 
 	#site-navigation a {
 		font-size: 1.1em;
 		padding: .975em .8em;
 	}
 
-	.scrolling-bg.cd-color-2 {
-		height: 10.5em;
-	}
+	.three-pic-container, .three-pic-container-version-two {
+        width: 890px;
+        height: 280px;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-	.footer-logo {
-		width: 50%;
-		float: right;
-		position: relative
-	}
+    .image-container-small {
+        width: 276.666px;
+        display: inline;
+        float: left;
+        background-color: purple;
+        margin: 10px;
+    }
 
-	.footer-logo img {
-		position: absolute;
-		top: -0.3em;
-		left: 2em;
-	}
+    .image-container-small img {
+        width: 276.666px;
+    }
 
-	.titleFooter {
-		width: 50%;
-		border-style: solid;
-		border-width: 0 1px 0 0;
-		clear: left;
-	}
+    .hover-appear, .hover-appear-version-two {
+        width: 276.666px;
+        height: 276.666px;
+        padding: 10px 10px;
+    }
 
-	.titleFooter h2 {
-		text-align: center;
-		padding: 0.2em 0 0 0;
-	}
+    .hover-disappear, .hover-disappear-version-two {
+        width: 276.666px;
+        padding: 15px;
+    }
 
-	.container2 {
-		width: 15%;
-		padding: 0.5em 0 0 0;
-		clear: left;
-	}
+    .hover-appear p{
+        font-size: .9em;
+        line-height: 1.2em;
+        padding: 10px 0 0 0;
+    }
 
-	.container3 {
-		width: 35%;
-		float: left;
-		padding: 0.5em 0 0 0;
-		border-style: solid;
-		border-width: 0 1px 0 0;
-	}
+    .hover-disappear-version-two {
+        top: 110px;
+        left: 0;
+        height: 100px;
+    }
 
-	.container3 h5 {
-		text-align: left;
-	}
+    .hover-appear-version-two p {
+        font-size: .9em;
+        line-height: 1.2em;
+    }
 
-	.container::after {
-		/* clearfix */
-		content: '';
-		display: table;
-		clear: both;
-	}
+    .text-explanation p {
+         margin: 15px 0 0 0;
+         padding: 0 0 0 10px;
+         }
 
-	.logo {
-		float: left;
-		padding: .1em 0 0 .3em;
-	}
+    .two-pic-container {
+            width: 890px;
+            height: 320px;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+
+    .pic-disappear img, .pic-underneath img, .pic-covered img {
+        width: 435px;
+        height: 290px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pic-disappear, .pic-underneath, .pic-covered {
+        width: 435px;
+        height: 290px;
+        background: blue;
+        margin: 0;
+        padding: 0;
+        }
+
+    .pic-covered, .pic-covered-text {
+        position: absolute;
+        top: 10px;
+        left: 445px;
+        height: 290px;
+        width: 435px;
+        }
+
+
+    .pic-underneath {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        }
+
+    .pic-covered-text {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .pic-covered-text h3 {
+        border-style: dotted;
+        border-width: 0 0 2px 0;
+        border-color: black;
+    }
+
+    .pic-covered-text p {
+        text-align: left;
+        font-size: .9em;
+    }
+
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1150px) {
 	.fixed-bg {
 		background-attachment: fixed;
 	}
+	.three-pic-container, .three-pic-container-version-two {
+        width: 1080px;
+        height: 390px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .image-container-small {
+        width: 330px;
+        display: inline;
+        float: left;
+        background-color: purple;
+        margin: 15px;
+    }
+
+    .image-container-small img {
+        width: 330px;
+    }
+
+    .hover-appear, .hover-appear-version-two {
+        width: 330px;
+        height: 330px;
+        padding: 10px;
+    }
+
+    .hover-disappear, .hover-disappear-version-two {
+        width: 330px;
+        padding: 10px;
+    }
+
+    .hover-appear p{
+        font-size: .9em;
+        line-height: 1.2em;
+        padding: 10px 0 0 0;
+    }
+
+    .hover-disappear-version-two {
+        top: 110px;
+        left: 0;
+        height: 100px;
+    }
+
+    .hover-appear-version-two p {
+        font-size: .9em;
+        line-height: 1.2em;
+    }
+
+    .text-explanation p {
+         margin: 15px 0 0 0;
+         padding: 0 0 0 10px;
+         }
+
+    .two-pic-container {
+            width: 1080px;
+            height: 390px;
+            margin: 0 auto;
+            padding: 10px 15px;
+        }
+
+    .pic-disappear img, .pic-underneath img, .pic-covered img {
+        width: 525px;
+        height: 370px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pic-disappear, .pic-underneath, .pic-covered {
+        width: 525px;
+        height: 370px;
+        background: blue;
+        margin: 0;
+        padding: 0;
+        }
+
+    .pic-covered, .pic-covered-text {
+        position: absolute;
+        top: 10px;
+        left: 540px;
+        height: 370px;
+        width: 525px;
+        }
+
+
+    .pic-underneath {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        }
+
+    .pic-covered-text {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .pic-covered-text h3 {
+        border-style: dotted;
+        border-width: 0 0 2px 0;
+        border-color: black;
+    }
+
+    .pic-covered-text p {
+        text-align: left;
+        font-size: .9em;
+    }
+
+
 }
 

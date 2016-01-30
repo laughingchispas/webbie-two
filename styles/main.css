@@ -175,7 +175,7 @@ h5 {
 }
 
 .fixed-bg.cd-bg-2 {
-	background-image: url("img/concrete2.jpg");
+	background-image: url("img/yellow.wall.jpg");
 
 }
 
@@ -254,10 +254,18 @@ nav {
 	padding: 0;
 	border-bottom: 1px solid #eee;
 	margin: .55em 0 .2em;
+	font-color: rgb(255, 102, 102);
 }
 
 #site-navigation li {
 	border-top: 1px solid #eee;
+}
+
+#site-navigation li a:hover {
+	color: rgb(255, 102, 102);
+}
+#site-navigation li a.active {
+	color: rgb(255, 102, 102);
 }
 
 #site-navigation a {
@@ -268,9 +276,6 @@ nav {
 	padding: .975em 1.3em;
 }
 
-#site-navigation a:hover {
-	background: #f8f8f8;
-}
 #site-navigation nav {
 	height: 0;
 	overflow: hidden;
@@ -558,37 +563,21 @@ body {
 }
 
 
-.not-home-info {
-    border: 2px dotted #000;
-    width: 90%;
-    height: 250px;
-    margin: 10px auto;
-    border-left: none;
-    border-right: none;
-    clear: both;
-    background-color: green;
-    margin: 10px auto;
-    padding: 0 20px;
-}
-
 .not-home-info-pic img{
-    width: 20%;
-    border: 2px dotted #000;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    padding: 20px;
-    display: inline;
-    float: left;
-    margin: 10px 0;
+    width: 300px;
+    border-radius: 5px;
 }
 
 .not-home-info-text {
-    width: 60%;
-    padding: 20px;
-    margin: 20px;
+    width: 300px;
     background-color: pink;
-    float: left;
+    border-radius: 5px;
+}
+
+#teacher {
+    height: 250px;
+    padding: 30px 0;
+    margin: 0 auto;
 }
 
 #top {
@@ -833,6 +822,15 @@ body {
         border-color: black;
     }
 
+    .not-home-info-pic img{
+        width: 400px;
+    }
+
+    .not-home-info-text {
+        width: 400px;
+
+    }
+
 }
 
 @media only screen and (min-width: 720px) {
@@ -905,7 +903,6 @@ body {
         width: 210px;
         display: inline;
         float: left;
-        background-color: purple;
         margin: 10px;
     }
 
@@ -1000,6 +997,22 @@ body {
         font-size: .9em;
     }
 
+    .not-home-info-pic img{
+        width: 330px;
+        border: 2px dotted #000;
+        border-bottom: none;
+        border-top: none;
+        border-left: none;
+        display: inline;
+        float: left;
+    }
+
+    .not-home-info-text {
+        width: 330px;
+        display: inline;
+        float: left;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -1015,7 +1028,6 @@ body {
             width: 240px;
             display: inline;
             float: left;
-            background-color: purple;
             margin: 10px;
         }
 
@@ -1041,7 +1053,7 @@ body {
         }
 
         .hover-disappear-version-two {
-            top: 110px;
+            top: 150px;
             left: 0;
             height: 100px;
         }
@@ -1107,6 +1119,10 @@ body {
             text-align: left;
             font-size: .9em;
         }
+
+        .not-home-info-pic img, .not-home-info-text {
+                width: 380px;
+        }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1127,7 +1143,6 @@ body {
         width: 276.666px;
         display: inline;
         float: left;
-        background-color: purple;
         margin: 10px;
     }
 
@@ -1153,7 +1168,7 @@ body {
     }
 
     .hover-disappear-version-two {
-        top: 110px;
+        top: 176.66px;
         left: 0;
         height: 100px;
     }
@@ -1219,7 +1234,9 @@ body {
         text-align: left;
         font-size: .9em;
     }
-
+    .not-home-info-pic img, .not-home-info-text {
+            width: 430px;
+    }
 }
 
 @media only screen and (min-width: 1150px) {
@@ -1237,7 +1254,6 @@ body {
         width: 330px;
         display: inline;
         float: left;
-        background-color: purple;
         margin: 15px;
     }
 
@@ -1263,7 +1279,7 @@ body {
     }
 
     .hover-disappear-version-two {
-        top: 110px;
+        top: 230px;
         left: 0;
         height: 100px;
     }
@@ -1330,6 +1346,9 @@ body {
         font-size: .9em;
     }
 
+    .not-home-info-pic img, .not-home-info-text {
+            width: 525px;
+    }
 
 }
 

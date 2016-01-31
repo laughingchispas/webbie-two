@@ -573,7 +573,7 @@ body {
 	border-right: none;
 }
 
-.content-title-not-home h2, .content-title-not-home p {
+.content-title-not-home h2, .content-title-not-home p, .content-title-not-home h3 {
     color: white;
 }
 
@@ -583,6 +583,11 @@ body {
     margin: 0 auto;
     line-height: 2em;
     font-size: 1.2em;
+}
+
+.content-title-not-home h3 {
+    text-align: center;
+    font-size: 1em;
 }
 
 
@@ -801,7 +806,7 @@ body {
     .hover-appear-version-two p{
         font-size: .9em;
         line-height: 1.2em;
-
+        padding: 10px 0 0 0;
     }
 
     .text-explanation p{

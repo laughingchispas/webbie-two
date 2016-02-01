@@ -497,6 +497,9 @@ body {
 	width: 300px;
 	height: 200px;
 	border-radius: 5px;
+}
+
+.pic-underneath, .pic-covered, .pic-covered-text, .pic-underneath img, .pic-covered img {
 	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -521,7 +524,7 @@ body {
 	left: 0;
 	background-color: rgba(255, 255, 255, 0.7);
 	height: 200px;
-	padding: 10px 15px;
+	padding: 3px 10px;
 }
 
 #rainbow {
@@ -549,12 +552,13 @@ body {
 	text-align: left;
 	font-family: Times, Arial, Serif;
 	font-size: .88em;
+	padding: 0;
 }
 
 /* middle section */
 .whoiam {
 	margin: 20px auto;
-	width: 200px;
+	width: 250px;
 }
 
 .whoiam h1 {
@@ -669,9 +673,48 @@ body {
 
 .blurcontainer {
 	width: 100%;
-	background-color: pink;
 }
 
+#contact-page, #contact-page-two {
+    margin: 0 auto;
+    padding: 20px 0;
+    height: 75px;
+}
+
+#contact-page h3, #contact-page-two h3 {
+      text-align: right;
+      padding: 10px 10px 0 0;
+      line-height: .8;
+}
+#contact-page p, #contact-page-two p{
+      text-align: left;
+      font-size: 1em;
+      line-height: 1.2;
+}
+
+#contact-page-two {
+      border-width: 0 0 2px 0;
+      border-color: black;
+      border-style: dotted;
+}
+
+#contact-page-background {
+    padding: 20px 20px 0 20px;
+}
+
+.contact-type {
+    width: 50%;
+    float: left;
+}
+
+.contact-information {
+    width: 50%;
+    float: left;
+    border-style: dotted;
+    border-width: 0 0 0 1px;
+    border-color: black;
+    padding: 0 0 0 10px;
+}
 /******************************* MAIN CONTENT *********************************************/
 
 .main-content {
@@ -851,7 +894,7 @@ body {
     .whoiam {
         margin: 0 auto;
         padding: 0 0 20px 0;
-        width: 200px;
+        width: 250px;
     }
 
     .whoiam h1 {
@@ -959,7 +1002,7 @@ body {
     }
 
     .hover-appear p{
-        font-size: .9em;
+        font-size: .8em;
         line-height: 1.2em;
         padding: 10px 0 0 0;
     }
@@ -971,9 +1014,14 @@ body {
     }
 
     .hover-appear-version-two p {
-        font-size: .9em;
+        font-size: .8em;
         line-height: 1.2em;
     }
+
+    .hover-appear-version-two h3 {
+            font-size: 1em;
+            line-height: 1em;
+        }
 
     .whoiam {
         margin: 40px auto 0 auto;
@@ -999,7 +1047,6 @@ body {
     .pic-disappear, .pic-underneath, .pic-covered {
         width: 330px;
         height: 220px;
-        background: blue;
         margin: 0;
         padding: 0;
         }
@@ -1079,6 +1126,9 @@ body {
    	height: 6em;
    }
 
+#contact-page-background {
+    padding: 20px 70px 0 70px;
+}
 
 }
 
@@ -1147,7 +1197,6 @@ body {
         .pic-disappear, .pic-underneath, .pic-covered {
             width: 385px;
             height: 256.66px;
-            background: blue;
             margin: 0;
             padding: 0;
             }
@@ -1174,7 +1223,7 @@ body {
                font-size: 1.4em;
            }
        .pic-covered-text p{
-           font-size: 1.1em;
+           font-size: 1.05em;
        }
 
       #rainbow p {
@@ -1267,7 +1316,6 @@ body {
     .pic-disappear, .pic-underneath, .pic-covered {
         width: 435px;
         height: 290px;
-        background: blue;
         margin: 0;
         padding: 0;
         }
@@ -1381,9 +1429,6 @@ body {
     .pic-disappear, .pic-underneath, .pic-covered {
         width: 525px;
         height: 370px;
-        background: blue;
-        margin: 0;
-        padding: 0;
         }
 
     .pic-covered, .pic-covered-text {

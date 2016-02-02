@@ -142,7 +142,8 @@ h3 {
 h4 {
 	font-size: 1.063em; /* 17px / 16 = 1.063em */
 	line-height: 1.223;
-	text-align: center;
+    font-family: 'CarbonType', Arial, sans-serif;
+    color: black;
 }
 
 h5 {
@@ -175,15 +176,15 @@ h5 {
 }
 
 .fixed-bg.cd-bg-2 {
-	background-image: url("img/concrete2.jpg");
+	background-image: url("img/concrete3.jpg");
 	margin: 0;
-	box-shadow: 3px 0 3px 3px black;
+	padding: 0;
 }
 
 .scrolling-bg {
 	position: relative;
 	z-index: 2;
-	box-shadow: 3px 0 3px 3px black;
+box-shadow: 3px 0 3px 3px black;
 }
 
 /* .scrolling-bg.cd-color-1 {
@@ -192,7 +193,7 @@ h5 {
 } */
 
 .scrolling-bg.cd-color-1 {
-	background-image: url("img/concrete2.jpg");
+	background-image: url("img/concrete3.jpg");
 	color: #3d3536;
     padding:20px;
 }
@@ -202,6 +203,7 @@ h5 {
 	color: #3d3536;
 	height: 7.5em;
 	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -214,9 +216,14 @@ h5 {
 
 /******************************** NAVIGATION ********************************/
 
+header, #site-navigation {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 header {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
     top: 0;
     left: 0;
     z-index: 2;
@@ -228,27 +235,15 @@ header {
 }
 .name {
 	float: left;
-	font-family: 'CarbonType', Arial, sans-serif;
-	color: black;
 	padding: 0 0 0 10px;
 }
 
-nav {
+nav, #site-navigation {
     width: 100%;
 }
-#site-navigation {
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	padding: 0.55em 0 .75em 0;
-	background-color: rgba(255, 255, 255, 0.8);
-}
 
-#site-navigation h4 {
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+#site-navigation {
+	padding: 0.55em 0 .75em 0;
 }
 
 #site-navigation ul {
@@ -266,6 +261,7 @@ nav {
 #site-navigation li a:hover {
 	color: rgb(255, 102, 102);
 }
+
 #site-navigation li a.active {
 	color: rgb(255, 102, 102);
 }
@@ -313,7 +309,6 @@ body {
 	overflow: hidden;
 }
 
-
 /********************************* image styling ***********************************/
 
 /***************************** all images******************************************/
@@ -334,61 +329,49 @@ body {
 .image-container-small {
 	position: relative;
     margin: 15px auto 15px auto;
-	border-radius: 5px;
-	width: 300px;
+
+}
+
+.image-container-small img, .hover-appear, .hover-appear-version-two, .hover-disappear, .hover-disappear-version-two,
+.image-container-small {
+    border-radius: 5px;
+    width: 300px;
 }
 
 .image-container-small img {
-	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.8);
-	width: 300px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
 }
 
 .hover-appear, .hover-appear-version-two {
 	position: absolute;
-	z-index: 20;
 	top: 0;
 	left: 0;
-	width: 300px;
 	height: 300px;
-	background-color: transparent;
-	display: block;
-	border-radius: 5px;
+	display: none;
 	padding: 10px 15px;
+	background-color: rgba(255, 255, 255, 0.9)
 }
 
 .hover-disappear, .hover-disappear-version-two {
-	width: 300px;
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.9);
 	padding: 15px;
-	border-radius: 5px;
 	left: 0;
 }
 
-.hover-disappear-version-two h3 {
-    color: black;
-    }
 /********** first-version *********/
 
 .hover-appear h3 {
 	text-align: left;
-	color: transparent;
+	color: rgb(255, 102, 102);
 }
 
 .hover-appear-version-two h3 {
 	text-align: left;
-	color: transparent;
 }
 
-.hover-appear:hover + .hover-disappear {
-	z-index: -1;
-}
-.hover-appear:hover {
-	background-color: rgba(255, 255, 255, 0.9);
-}
 .hover-appear p{
 	text-align: left;
 	font-size: .9em;
@@ -396,18 +379,6 @@ body {
 	border-width: 2px 0 0 0;
 	line-height: 1.2em;
 	padding: 10px 0 0 0;
-	color: transparent;
-}
-
-.hover-appear h3{
-    color: transparent;
-    }
-
-.hover-appear:hover p {
-	color: black;
-}
-.hover-appear:hover h3 {
-	color: rgb(255, 102, 102);
 }
 
 .hover-disappear {
@@ -437,10 +408,6 @@ body {
     border-width: 2px 0 0 0;
 }
 
-.hover-appear-version-two:hover + .hover-disappear-version-two {
-	z-index: -1;
-}
-
 .hover-appear-version-two p{
 	text-align: left;
 	font-size: .9em;
@@ -448,23 +415,7 @@ body {
 	border-width: 2px 0 0 0;
 	line-height: 1.2em;
 	padding: 10 0 0 0;
-	color: transparent;
 }
-
-.hover-appear-version-two:hover {
-	background-color: rgba(255, 255, 255, 0.9);
-}
-
-.hover-appear-version-two:hover p {
-	color: black;
-}
-
-.hover-appear-version-two:hover h3 {
-	color: rgb(255, 102, 102);
-	border-color: transparent;
-
-}
-
 
 .text-explanation {
      margin: 15px 0 0 0;
@@ -484,6 +435,22 @@ body {
     border: none;
 }
 
+/**************** hover effects *****************/
+.image-container-small:hover .hover-disappear {
+	display: none;
+}
+.image-container-small:hover .hover-appear {
+	display: block;
+}
+
+.image-container-small:hover .hover-disappear-version-two {
+	display: none;
+}
+.image-container-small:hover .hover-appear-version-two {
+	display: block;
+}
+
+
 /**** two pic container ***************/
 .two-pic-container {
 	position: relative;
@@ -492,31 +459,22 @@ body {
 	border-radius: 5px;
 }
 
-.pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
- .pic-disappear img, .pic-underneath img, .pic-covered img {
+.pic-disappear, .pic-covered, .pic-covered-text, .pic-disappear img, .pic-covered img {
 	width: 300px;
 	height: 200px;
 	border-radius: 5px;
 }
 
-.pic-underneath, .pic-covered, .pic-covered-text, .pic-underneath img, .pic-covered img {
-	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.3);
+.pic-covered, .pic-covered-text, .pic-covered img {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-.pic-disappear, .pic-covered-text {
+.pic-covered-text {
     position: absolute;
 }
 
 .pic-disappear {
-    z-index: 50;
-}
-
-.pic-underneath {
-	z-index: 40;
-}
-
-.pic-disappear:hover {
-	opacity: 0;
+    display:block;
 }
 
 .pic-covered-text {
@@ -628,7 +586,7 @@ body {
 .content-title-not-home {
 	background-color: black;
 	margin: 50px auto 20px auto;
-	padding: 10px 0;
+	padding: 10px 0 20px 0;
 }
 
 /**** footer******/
@@ -668,12 +626,13 @@ body {
  padding: 0 0 20px 0;
 }
 
+/* developer page */
+#under-title-explanation {
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
 /***contact page****/
-
-.blurcontainer {
-	width: 100%;
-}
 
 #contact-page, #contact-page-two {
     margin: 0 auto;
@@ -746,43 +705,6 @@ body {
 .end-of-page img{
         width: 450px
         }
-
-/*CONTACT PAGE STYLES*/
-
-.imgcontact img {
-	width: 200px;
-	border-radius: 100px;
-}
-
-.imgcontact img {
-	-webkit-filter: blur(4px);
-	filter: blur(4px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.imgcontact:hover img {
-	-webkit-filter: blur(0px);
-	filter: blur(0px);
-}
-
-.imgcontact {
-	float: left;
-}
-
-.blurcontainer {
-	padding: 20px 50px 0 50px;
-}
-
-.blurcontainercontact {
-	background-color: pink;
-	width: 200px;
-}
-
-.contactInfo {
-	background-color: red;
-	width: 250px;
-}
 
 /* ******************************************
     Media Queries
@@ -861,12 +783,11 @@ body {
         }
 
     .two-pic-container {
-        position: relative;
         width: 400px;
     }
 
-    .pic-disappear, .pic-underneath, .pic-covered, .pic-covered-text,
-    .pic-disappear img, .pic-underneath img, .pic-covered img {
+    .pic-disappear, .pic-covered, .pic-covered-text,
+    .pic-disappear img, .pic-covered img {
         width: 400px;
         height: 266.66px;
     }
@@ -933,16 +854,18 @@ body {
 		float: left;
 		font-family: 'CarbonType', Arial, sans-serif;
 		color: black;
-		padding: 0 0 0 10px;
+		padding: 2px 0 0 10px;
 	}
+
+    h4 {
+        font-size: 1em;
+        margin: .7em 1.3em 0 0;
+    }
+
 
 	#site-navigation {
 		padding: 0;
 		margin: 0;
-	}
-
-	#site-navigation h4 {
-		margin: .39em 1.3em 0 0;
 	}
 
 	#site-navigation label {
@@ -967,10 +890,9 @@ body {
 
 	#site-navigation a {
 		display: inline-block;
-		font-size: .93em;
-		padding: .975em .2em;
+		font-size: .90em;
+		padding: .975em .2em .975em 0;
 	}
-
                                                    /*image styles */
     .three-pic-container, .three-pic-container-version-two {
         width: 690px;
@@ -1021,30 +943,28 @@ body {
     .hover-appear-version-two h3 {
             font-size: 1em;
             line-height: 1em;
-        }
+    }
 
     .whoiam {
         margin: 40px auto 0 auto;
     }
-
 
     .two-pic-container {
         margin: 0 auto;
         position: relative;
         width: 690px;
         height: 250px;
-        margin: 0 auto;
         padding: 10px 15px;
     }
 
-    .pic-disappear img, .pic-underneath img, .pic-covered img {
+    .pic-disappear img, .pic-covered img {
         width: 330px;
         height: 220px;
         margin: 0;
         padding: 0;
     }
 
-    .pic-disappear, .pic-underneath, .pic-covered {
+    .pic-disappear, .pic-covered {
         width: 330px;
         height: 220px;
         margin: 0;
@@ -1059,30 +979,31 @@ body {
         width: 330px;
         }
 
-
-    .pic-underneath {
-        position: absolute;
-        top: 10px;
-        left: 15px;
-        }
-
     .pic-covered-text {
         padding: 10px 20px;
     }
 
     .pic-covered-text h3{
-            font-size: 1.2em;
+         font-size: 1.2em;
         }
     .pic-covered-text p{
         font-size: .92em;
     }
-
 
     #rainbow p {
         	font-size: .9em;
         }
     #rainbow h3 {
         font-size: 1.2em;
+    }
+
+    .pic-disappear, .pic-disappear img, {
+    	border-radius: 5px 0 0 5px;
+    	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    pic-covered, .pic-covered-text, .pic-covered img {
+        border-radius: 0 5px 5px 0;
     }
 
     #teacher {
@@ -1134,6 +1055,15 @@ body {
 
 @media only screen and (min-width: 800px) {
 
+        .name {
+            padding: 0 0 0 10px;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            margin: .5em 1.3em 0 0;
+        }
+
         .three-pic-container, .three-pic-container-version-two {
             width: 790px;
             height: 230px;
@@ -1170,7 +1100,7 @@ body {
         }
 
         .hover-disappear-version-two {
-            top: 150px;
+            top: 140px;
             left: 0;
             height: 100px;
         }
@@ -1187,14 +1117,14 @@ body {
                 padding: 10px 15px;
             }
 
-        .pic-disappear img, .pic-underneath img, .pic-covered img {
+        .pic-disappear img, .pic-covered img {
             width: 385px;
             height: 256.66px;
             margin: 0;
             padding: 0;
         }
 
-        .pic-disappear, .pic-underneath, .pic-covered {
+        .pic-disappear, .pic-covered {
             width: 385px;
             height: 256.66px;
             margin: 0;
@@ -1207,12 +1137,6 @@ body {
             left: 395px;
             height: 256.66px;
             width: 385px;
-            }
-
-        .pic-underneath {
-            position: absolute;
-            top: 10px;
-            left: 15px;
             }
 
        .pic-covered-text {
@@ -1238,8 +1162,8 @@ body {
 @media only screen and (min-width: 900px) {
 
 	#site-navigation a {
-		font-size: 1.1em;
-		padding: .975em .8em;
+		font-size: 1em;
+		padding: 1.15em .8em 0.975em 0;
 	}
 
 	.logo {
@@ -1250,7 +1174,7 @@ body {
     }
 
     .name h4 {
-        font-size  1.4em
+        font-size:  1.2em;
     }
 
 	.three-pic-container, .three-pic-container-version-two {
@@ -1306,14 +1230,14 @@ body {
             padding: 10px 15px;
         }
 
-    .pic-disappear img, .pic-underneath img, .pic-covered img {
+    .pic-disappear img, .pic-covered img {
         width: 435px;
         height: 290px;
         margin: 0;
         padding: 0;
     }
 
-    .pic-disappear, .pic-underneath, .pic-covered {
+    .pic-disappear, .pic-covered {
         width: 435px;
         height: 290px;
         margin: 0;
@@ -1326,13 +1250,6 @@ body {
         left: 445px;
         height: 290px;
         width: 435px;
-        }
-
-
-    .pic-underneath {
-        position: absolute;
-        top: 10px;
-        left: 15px;
         }
 
        .pic-covered-text {
@@ -1419,14 +1336,14 @@ body {
             padding: 10px 15px;
         }
 
-    .pic-disappear img, .pic-underneath img, .pic-covered img {
+    .pic-disappear img, .pic-covered img {
         width: 525px;
         height: 370px;
         margin: 0;
         padding: 0;
     }
 
-    .pic-disappear, .pic-underneath, .pic-covered {
+    .pic-disappear, .pic-covered {
         width: 525px;
         height: 370px;
         }
@@ -1437,12 +1354,6 @@ body {
         left: 540px;
         height: 370px;
         width: 525px;
-        }
-
-    .pic-underneath {
-        position: absolute;
-        top: 10px;
-        left: 15px;
         }
 
        .pic-covered-text h3{

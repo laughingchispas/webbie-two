@@ -87,8 +87,8 @@ body {
 
 @font-face {
 	font-family: 'CarbonType';
-	src: url('../fonts/CarbonType/carbontype.eot');
-	src: local('CarbonType'), local('CarbonType'), url('../fonts/CarbonType/carbontype.ttf') format('truetype');
+	src: url('../assets/fonts/CarbonType/carbontype.eot');
+	src: local('CarbonType'), local('CarbonType'), url('../assets/fonts/CarbonType/carbontype.ttf') format('truetype');
 }
 
 
@@ -311,7 +311,7 @@ body {
 
 /***************************** all images******************************************/
 
-.three-pic-container img, two-pic-container img{
+.three-pic-container img, two-pic-container img, .under-title-explanation{
 	width: 300px;
 	display: block;
 	margin: 0 auto;
@@ -627,7 +627,6 @@ body {
 /* developer page */
 .under-title-explanation {
     margin: 20px auto;
-    padding: 0 50px;
 
 }
 
@@ -733,8 +732,9 @@ body {
         width: 400px;
     }
 
-    .three-pic-container img, two-pic-container img{
+    .three-pic-container img, two-pic-container img, .under-title-explanation{
         width: 400px;
+
     }
 
     .three-pic-container, .three-pic-container-version-two {
@@ -954,13 +954,22 @@ body {
         margin: 40px auto 0 auto;
     }
 
-    .two-pic-container {
-        margin: 0 auto;
-        position: relative;
+    .two-pic-container, .under-title-explanation {
         width: 690px;
-        height: 250px;
-        padding: 10px 15px;
     }
+
+    .under-title-explanation h2{
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            -moz-column-count: 2; /* Firefox */
+            column-count: 2;
+            }
+
+    .two-pic-container {
+            margin: 0 auto;
+            position: relative;
+            height: 250px;
+            padding: 10px 15px;
+        }
 
     .pic-disappear img, .pic-covered img {
         width: 330px;
@@ -1056,12 +1065,6 @@ body {
     padding: 20px 70px 0 70px;
 }
 
-    .under-title-explanation h2{
-        -webkit-column-count: 2; /* Chrome, Safari, Opera */
-        -moz-column-count: 2; /* Firefox */
-        column-count: 2;}
-
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -1121,8 +1124,12 @@ body {
             line-height: 1.2em;
         }
 
+        .two-pic-container, .under-title-explanation {
+                width: 790px
+            }
+
+
         .two-pic-container {
-                width: 790px;
                 height: 280px;
                 margin: 0 auto;
                 padding: 10px 15px;
@@ -1233,8 +1240,11 @@ body {
         line-height: 1.2em;
     }
 
+    .two-pic-container, .under-title-explanation {
+         width: 890px
+        }
+
     .two-pic-container {
-            width: 890px;
             height: 320px;
             margin: 0 auto;
             padding: 10px 15px;
@@ -1337,6 +1347,10 @@ body {
     .whoiam {
         margin: 0 auto 10px auto;
     }
+
+    .two-pic-container, .under-title-explanation {
+         width: 1080px
+        }
 
     .two-pic-container {
             width: 1080px;

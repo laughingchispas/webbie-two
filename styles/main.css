@@ -170,19 +170,20 @@ a {
 }
 
 .fixed-bg.cd-bg-1 {
-	background-image: url("../images/ren-version1.jpg");
+	background-image: url("../images/cover.jpg");
+	background-attachment: scroll;
 }
 
 .fixed-bg.cd-bg-2 {
 	background-image: url("../images/concrete3.jpg");
 	margin: 0;
-	padding: 0;
+	    padding: 0 0 20px 0;
 }
 
 .scrolling-bg {
 	position: relative;
 	z-index: 2;
-box-shadow: 3px 0 3px 3px black;
+    box-shadow: 3px 0 3px 3px black;
 }
 
 /* .scrolling-bg.cd-color-1 {
@@ -193,7 +194,6 @@ box-shadow: 3px 0 3px 3px black;
 .scrolling-bg.cd-color-1 {
 	background-image: url("../images/concrete3.jpg");
 	color: #3d3536;
-    padding:20px;
 }
 
 .scrolling-bg.cd-color-2 {
@@ -311,17 +311,17 @@ body {
 
 /***************************** all images******************************************/
 
-.three-pic-container img, two-pic-container img, .under-title-explanation{
+.three-pic-container img, .under-title-explanation{
 	width: 300px;
 	display: block;
 	margin: 0 auto;
-	border-radius: 5px;
 }
 
 /***************************** three-pic-container ****************************************/
 .three-pic-container, .three-pic-container-version-two {
 	padding: 0;
 	margin: 0 auto;
+    border-radius: 5px;
 }
 
 .image-container-small {
@@ -348,14 +348,14 @@ body {
 	left: 0;
 	height: 300px;
 	display: none;
-	padding: 10px 15px;
+	padding: 10px;
 	background-color: rgba(255, 255, 255, 0.9)
 }
 
 .hover-disappear, .hover-disappear-version-two {
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.9);
-	padding: 15px;
+	padding: 10px;
 	left: 0;
 }
 
@@ -420,7 +420,7 @@ body {
      padding: 10px;
      background-color: rgba(255, 255, 255, 0.9);
      border-radius: 5px;
-     box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.8);
+     box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
      font-family: 'Lato', Arial, Serif;
           }
 
@@ -454,17 +454,25 @@ body {
 	position: relative;
 	width: 300px;
 	margin: 0 auto;
-	border-radius: 5px;
+	padding: 0 0 20px 0;
+}
+
+.pic-disappear img, .pic-disappear {
+    border-radius: 5px 5px 0 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.pic-covered img, .pic-covered {
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.pic-covered, .pic-covered-text, .pic-covered img {
+    border-radius: 0 0 5px 5px;
 }
 
 .pic-disappear, .pic-covered, .pic-covered-text, .pic-disappear img, .pic-covered img {
 	width: 300px;
 	height: 200px;
-	border-radius: 5px;
-}
-
-.pic-covered, .pic-covered-text, .pic-covered img {
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .pic-covered-text {
@@ -476,25 +484,11 @@ body {
 }
 
 .pic-covered-text {
-	bottom: 0;
+	bottom: 20px;
 	left: 0;
 	background-color: rgba(255, 255, 255, 0.7);
 	height: 200px;
 	padding: 3px 10px;
-}
-
-#rainbow {
-	background-color: rgba(255, 255, 255, 0.1);
-	padding: 15px 20px;
-}
-
-#rainbow h3 {
-	color: black;
-	font-size: 1.1em;
-}
-
-#rainbow p {
-	font-size: .91em;
 }
 
 .pic-covered-text h3 {
@@ -809,14 +803,6 @@ body {
         font-size: 1.1em;
     }
 
-    #rainbow h3 {
-    	font-size: 1.3em;
-    }
-
-    #rainbow p {
-    	font-size: 1.15em;
-    }
-
     .whoiam {
         margin: 0 auto;
         padding: 0 0 20px 0;
@@ -871,6 +857,7 @@ body {
 	#site-navigation {
 		padding: 0;
 		margin: 0;
+		position: fixed;
 	}
 
 	#site-navigation label {
@@ -1004,19 +991,16 @@ body {
         font-size: .92em;
     }
 
-    #rainbow p {
-        	font-size: .9em;
-        }
-    #rainbow h3 {
-        font-size: 1.2em;
+    .pic-disappear img, .pic-disappear {
+        border-radius: 5px 0 0 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     }
 
-    .pic-disappear, .pic-disappear img, {
-    	border-radius: 5px 0 0 5px;
-    	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.7);
+    .pic-covered img, .pic-covered {
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     }
 
-    pic-covered, .pic-covered-text, .pic-covered img {
+    .pic-covered, .pic-covered-text, .pic-covered img {
         border-radius: 0 5px 5px 0;
     }
 
@@ -1167,13 +1151,6 @@ body {
        .pic-covered-text p{
            font-size: 1.05em;
        }
-
-      #rainbow p {
-                font-size: 1.1em;
-            }
-      #rainbow h3 {
-                font-size: 1.4em;
-            }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1281,17 +1258,6 @@ body {
        .pic-covered-text p{
            font-size: 1.2em;
        }
-
-    #rainbow {
-        padding: 10px 30px;
-    }
-
-   #rainbow p {
-        	font-size: 1.2em;
-        }
-    #rainbow h3 {
-        font-size: 1.6em;
-    }
 }
 
 @media only screen and (min-width: 1150px) {
@@ -1302,7 +1268,6 @@ body {
         width: 1080px;
         height: 390px;
         margin: 0 auto;
-        padding: 0;
     }
 
     .image-container-small {
@@ -1353,10 +1318,8 @@ body {
         }
 
     .two-pic-container {
-            width: 1080px;
             height: 390px;
-            margin: 0 auto;
-            padding: 10px 15px;
+            padding: 10px 15px 100px 15px;
         }
 
     .pic-disappear img, .pic-covered img {
@@ -1385,17 +1348,6 @@ body {
        .pic-covered-text p{
             font-size: 1.3em;
        }
-
-    #rainbow {
-        padding: 15px 35px;
-    }
-
-   #rainbow p {
-        	font-size: 1.3em;
-        }
-    #rainbow h3 {
-        font-size: 1.7em;
-    }
 
   .under-title-explanation h2{
      -webkit-column-count: 3; /* Chrome, Safari, Opera */

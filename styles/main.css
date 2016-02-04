@@ -86,15 +86,9 @@ body {
 /* ----------FONTS----------------*/
 
 @font-face {
-	font-family: 'Cinzel-Regular';
-	src: url('fonts/cinzel/Cinzel-Regular.eot');
-	src: local('Cinzel-Regular'), local('cinzel'), url('fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: 'CarbonType';
-	src: url('fonts/CarbonType/carbontype.eot');
-	src: local('CarbonType'), local('CarbonType'), url('fonts/CarbonType/carbontype.ttf') format('truetype');
+	src: url('../fonts/CarbonType/carbontype.eot');
+	src: local('CarbonType'), local('CarbonType'), url('../fonts/CarbonType/carbontype.ttf') format('truetype');
 }
 
 
@@ -176,11 +170,11 @@ a {
 }
 
 .fixed-bg.cd-bg-1 {
-	background-image: url("ren-version1.jpg");
+	background-image: url("../images/ren-version1.jpg");
 }
 
 .fixed-bg.cd-bg-2 {
-	background-image: url("img/concrete3.jpg");
+	background-image: url("../images/concrete3.jpg");
 	margin: 0;
 	padding: 0;
 }
@@ -197,7 +191,7 @@ box-shadow: 3px 0 3px 3px black;
 } */
 
 .scrolling-bg.cd-color-1 {
-	background-image: url("img/concrete3.jpg");
+	background-image: url("../images/concrete3.jpg");
 	color: #3d3536;
     padding:20px;
 }
@@ -300,7 +294,7 @@ body {
 }
 #site-navigation label {
 	display: block;
-	background: url("img/icon-menu.png") no-repeat right center;
+	background: url("../images/icon-menu.png") no-repeat right center;
 	text-indent: -999em;
 	cursor: pointer;
 	-webkit-user-select: none; /* Chrome all / Safari all */

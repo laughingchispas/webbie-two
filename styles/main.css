@@ -171,7 +171,7 @@ a {
 
 .fixed-bg.cd-bg-1 {
 	background-image: url("../images/cover.jpg");
-	background-attachment: scroll;
+
 }
 
 .fixed-bg.cd-bg-2 {
@@ -885,6 +885,26 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 		font-size: .90em;
 		padding: .975em .2em .975em 0;
 	}
+
+
+	#site-navigation a {
+		font-size: .90em;
+		padding: .975em .2em .975em 0;
+	}
+
+	#site-navigation ul li {
+    		float: left;
+    	}
+
+
+#sub_menu li {
+    display: none;
+}
+
+/*k
+#sub_menu a:hover {
+    background-color: black;
+} */
                                                    /*image styles */
     .three-pic-container, .three-pic-container-version-two {
         width: 690px;
